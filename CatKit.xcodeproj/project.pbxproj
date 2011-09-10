@@ -18,7 +18,6 @@
 		DB785BB9141AFF8A005477A8 /* CatKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB8141AFF8A005477A8 /* CatKitTests.h */; };
 		DB785BBB141AFF8A005477A8 /* CatKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BBA141AFF8A005477A8 /* CatKitTests.m */; };
 		DB785BD7141B0900005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
-		DB785BDD141B0900005477A8 /* CatKitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BDC141B0900005477A8 /* CatKitUI.m */; };
 		DB785BE4141B0900005477A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */; };
 		DB785BE5141B0900005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAA141AFF8A005477A8 /* UIKit.framework */; };
 		DB785BE6141B0900005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
@@ -68,8 +67,6 @@
 		DB785BCF141B0576005477A8 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Position.m"; path = "../CatKitUI/UIView+Position.m"; sourceTree = "<group>"; };
 		DB785BD6141B0900005477A8 /* libCatKitUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKitUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785BDA141B0900005477A8 /* CatKitUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatKitUI-Prefix.pch"; sourceTree = "<group>"; };
-		DB785BDB141B0900005477A8 /* CatKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitUI.h; sourceTree = "<group>"; };
-		DB785BDC141B0900005477A8 /* CatKitUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitUI.m; sourceTree = "<group>"; };
 		DB785BE3141B0900005477A8 /* CatKitUITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitUITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785BED141B0900005477A8 /* CatKitUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatKitUITests-Info.plist"; sourceTree = "<group>"; };
 		DB785BEF141B0900005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -125,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB73EB14141B48E8000D904E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB785C05141B13BA005477A8 /* UIView */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 		DB785B8C141AFF89005477A8 = {
 			isa = PBXGroup;
 			children = (
@@ -221,8 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				DB785BC4141B04E2005477A8 /* UIKit */,
-				DB785BDB141B0900005477A8 /* CatKitUI.h */,
-				DB785BDC141B0900005477A8 /* CatKitUI.m */,
 				DB785BD9141B0900005477A8 /* Supporting Files */,
 			);
 			path = CatKitUI;
@@ -239,7 +242,7 @@
 		DB785BEB141B0900005477A8 /* CatKitUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DB785C05141B13BA005477A8 /* UIView */,
+				DB73EB14141B48E8000D904E /* UIKit */,
 				DB785BEC141B0900005477A8 /* Supporting Files */,
 			);
 			path = CatKitUITests;
@@ -452,7 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB785BDD141B0900005477A8 /* CatKitUI.m in Sources */,
 				DB785BFD141B0AE2005477A8 /* UIView+Position.m in Sources */,
 				DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */,
 			);
@@ -698,6 +700,7 @@
 				DB785BC0141AFF8A005477A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB785BC1141AFF8A005477A8 /* Build configuration list for PBXNativeTarget "CatKitTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +709,7 @@
 				DB785BC3141AFF8A005477A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB785BF5141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUI" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +718,7 @@
 				DB785BF7141B0900005477A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB785BF8141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +727,7 @@
 				DB785BFA141B0900005477A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
