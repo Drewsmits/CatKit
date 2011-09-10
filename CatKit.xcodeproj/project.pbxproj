@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB785B9B141AFF8A005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
+		DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BA0141AFF8A005477A8 /* CatKit.m */; };
+		DB785BA9141AFF8A005477A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */; };
+		DB785BAB141AFF8A005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAA141AFF8A005477A8 /* UIKit.framework */; };
+		DB785BAC141AFF8A005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
+		DB785BAE141AFF8A005477A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */; };
+		DB785BB1141AFF8A005477A8 /* libCatKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B97141AFF8A005477A8 /* libCatKit.a */; };
+		DB785BB7141AFF8A005477A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB5141AFF8A005477A8 /* InfoPlist.strings */; };
+		DB785BB9141AFF8A005477A8 /* CatKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB8141AFF8A005477A8 /* CatKitTests.h */; };
+		DB785BBB141AFF8A005477A8 /* CatKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BBA141AFF8A005477A8 /* CatKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB785BAF141AFF8A005477A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB785B8E141AFF89005477A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB785B96141AFF8A005477A8;
+			remoteInfo = CatKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB785B97141AFF8A005477A8 /* libCatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB785B9A141AFF8A005477A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB785B9E141AFF8A005477A8 /* CatKit-Prefix.pch */ = {isa = PBXFileReference; path = "CatKit-Prefix.pch"; sourceTree = "<group>"; };
+		DB785B9F141AFF8A005477A8 /* CatKit.h */ = {isa = PBXFileReference; path = CatKit.h; sourceTree = "<group>"; };
+		DB785BA0141AFF8A005477A8 /* CatKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKit.m; sourceTree = "<group>"; };
+		DB785BA7141AFF8A005477A8 /* CatKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB785BAA141AFF8A005477A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DB785BB4141AFF8A005477A8 /* CatKitTests-Info.plist */ = {isa = PBXFileReference; path = "CatKitTests-Info.plist"; sourceTree = "<group>"; };
+		DB785BB6141AFF8A005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB785BB8141AFF8A005477A8 /* CatKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitTests.h; sourceTree = "<group>"; };
+		DB785BBA141AFF8A005477A8 /* CatKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB785B94141AFF8A005477A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785B9B141AFF8A005477A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB785BA3141AFF8A005477A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BA9141AFF8A005477A8 /* SenTestingKit.framework in Frameworks */,
+				DB785BAB141AFF8A005477A8 /* UIKit.framework in Frameworks */,
+				DB785BAC141AFF8A005477A8 /* Foundation.framework in Frameworks */,
+				DB785BAE141AFF8A005477A8 /* CoreGraphics.framework in Frameworks */,
+				DB785BB1141AFF8A005477A8 /* libCatKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB785B8C141AFF89005477A8 = {
+			isa = PBXGroup;
+			children = (
+				DB785B9C141AFF8A005477A8 /* CatKit */,
+				DB785BB2141AFF8A005477A8 /* CatKitTests */,
+				DB785B99141AFF8A005477A8 /* Frameworks */,
+				DB785B98141AFF8A005477A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB785B98141AFF8A005477A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB785B97141AFF8A005477A8 /* libCatKit.a */,
+				DB785BA7141AFF8A005477A8 /* CatKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB785B99141AFF8A005477A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB785B9A141AFF8A005477A8 /* Foundation.framework */,
+				DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */,
+				DB785BAA141AFF8A005477A8 /* UIKit.framework */,
+				DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB785B9C141AFF8A005477A8 /* CatKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB785B9F141AFF8A005477A8 /* CatKit.h */,
+				DB785BA0141AFF8A005477A8 /* CatKit.m */,
+				DB785B9D141AFF8A005477A8 /* Supporting Files */,
+			);
+			path = CatKit;
+			sourceTree = "<group>";
+		};
+		DB785B9D141AFF8A005477A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB785B9E141AFF8A005477A8 /* CatKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB785BB2141AFF8A005477A8 /* CatKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BB8141AFF8A005477A8 /* CatKitTests.h */,
+				DB785BBA141AFF8A005477A8 /* CatKitTests.m */,
+				DB785BB3141AFF8A005477A8 /* Supporting Files */,
+			);
+			path = CatKitTests;
+			sourceTree = "<group>";
+		};
+		DB785BB3141AFF8A005477A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BB4141AFF8A005477A8 /* CatKitTests-Info.plist */,
+				DB785BB5141AFF8A005477A8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB785B95141AFF8A005477A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DB785B96141AFF8A005477A8 /* CatKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB785BBE141AFF8A005477A8 /* Build configuration list for PBXNativeTarget "CatKit" */;
+			buildPhases = (
+				DB785B93141AFF8A005477A8 /* Sources */,
+				DB785B94141AFF8A005477A8 /* Frameworks */,
+				DB785B95141AFF8A005477A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatKit;
+			productName = CatKit;
+			productReference = DB785B97141AFF8A005477A8 /* libCatKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB785BA6141AFF8A005477A8 /* CatKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB785BC1141AFF8A005477A8 /* Build configuration list for PBXNativeTarget "CatKitTests" */;
+			buildPhases = (
+				DB785BA2141AFF8A005477A8 /* Sources */,
+				DB785BA3141AFF8A005477A8 /* Frameworks */,
+				DB785BA4141AFF8A005477A8 /* Resources */,
+				DB785BA5141AFF8A005477A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB785BB0141AFF8A005477A8 /* PBXTargetDependency */,
+			);
+			name = CatKitTests;
+			productName = CatKitTests;
+			productReference = DB785BA7141AFF8A005477A8 /* CatKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB785B8E141AFF89005477A8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DB785B91141AFF89005477A8 /* Build configuration list for PBXProject "CatKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB785B8C141AFF89005477A8;
+			productRefGroup = DB785B98141AFF8A005477A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB785B96141AFF8A005477A8 /* CatKit */,
+				DB785BA6141AFF8A005477A8 /* CatKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB785BA4141AFF8A005477A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BB7141AFF8A005477A8 /* InfoPlist.strings in Resources */,
+				DB785BB9141AFF8A005477A8 /* CatKitTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB785BA5141AFF8A005477A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB785B93141AFF8A005477A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB785BA2141AFF8A005477A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BBB141AFF8A005477A8 /* CatKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB785BB0141AFF8A005477A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB785B96141AFF8A005477A8 /* CatKit */;
+			targetProxy = DB785BAF141AFF8A005477A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB785BB5141AFF8A005477A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB785BB6141AFF8A005477A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB785BBC141AFF8A005477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB785BBD141AFF8A005477A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB785BBF141AFF8A005477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CatKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB785BC0141AFF8A005477A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CatKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DB785BC2141AFF8A005477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
+				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DB785BC3141AFF8A005477A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
+				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB785B91141AFF89005477A8 /* Build configuration list for PBXProject "CatKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB785BBC141AFF8A005477A8 /* Debug */,
+				DB785BBD141AFF8A005477A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB785BBE141AFF8A005477A8 /* Build configuration list for PBXNativeTarget "CatKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB785BBF141AFF8A005477A8 /* Debug */,
+				DB785BC0141AFF8A005477A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB785BC1141AFF8A005477A8 /* Build configuration list for PBXNativeTarget "CatKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB785BC2141AFF8A005477A8 /* Debug */,
+				DB785BC3141AFF8A005477A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB785B8E141AFF89005477A8 /* Project object */;
+}
