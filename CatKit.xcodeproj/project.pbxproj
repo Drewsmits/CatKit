@@ -17,8 +17,22 @@
 		DB785BB7141AFF8A005477A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB5141AFF8A005477A8 /* InfoPlist.strings */; };
 		DB785BB9141AFF8A005477A8 /* CatKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB8141AFF8A005477A8 /* CatKitTests.h */; };
 		DB785BBB141AFF8A005477A8 /* CatKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BBA141AFF8A005477A8 /* CatKitTests.m */; };
-		DB785BD0141B0576005477A8 /* UIView+Position.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785BCE141B0576005477A8 /* UIView+Position.h */; };
-		DB785BD1141B0576005477A8 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BCF141B0576005477A8 /* UIView+Position.m */; };
+		DB785BD7141B0900005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
+		DB785BDD141B0900005477A8 /* CatKitUI.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BDC141B0900005477A8 /* CatKitUI.m */; };
+		DB785BE4141B0900005477A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */; };
+		DB785BE5141B0900005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAA141AFF8A005477A8 /* UIKit.framework */; };
+		DB785BE6141B0900005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
+		DB785BE7141B0900005477A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */; };
+		DB785BEA141B0900005477A8 /* libCatKitUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BD6141B0900005477A8 /* libCatKitUI.a */; };
+		DB785BF0141B0900005477A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB785BEE141B0900005477A8 /* InfoPlist.strings */; };
+		DB785BF2141B0900005477A8 /* CatKitUITests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BF1141B0900005477A8 /* CatKitUITests.h */; };
+		DB785BF4141B0900005477A8 /* CatKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BF3141B0900005477A8 /* CatKitUITests.m */; };
+		DB785BFC141B0ADD005477A8 /* UIView+Position.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785BCE141B0576005477A8 /* UIView+Position.h */; };
+		DB785BFD141B0AE2005477A8 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BCF141B0576005477A8 /* UIView+Position.m */; };
+		DB785C00141B0B56005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BFE141B0B44005477A8 /* UIKit.framework */; };
+		DB785C03141B0E95005477A8 /* UIView+Insert.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785C01141B0E95005477A8 /* UIView+Insert.h */; };
+		DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C02141B0E95005477A8 /* UIView+Insert.m */; };
+		DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C07141B13EE005477A8 /* UIViewPositionTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +42,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DB785B96141AFF8A005477A8;
 			remoteInfo = CatKit;
+		};
+		DB785BE8141B0900005477A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB785B8E141AFF89005477A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB785BD5141B0900005477A8;
+			remoteInfo = CatKitUI;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,8 +66,22 @@
 		DB785BB6141AFF8A005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB785BB8141AFF8A005477A8 /* CatKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitTests.h; sourceTree = "<group>"; };
 		DB785BBA141AFF8A005477A8 /* CatKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitTests.m; sourceTree = "<group>"; };
-		DB785BCE141B0576005477A8 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
-		DB785BCF141B0576005477A8 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
+		DB785BCE141B0576005477A8 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Position.h"; path = "../CatKitUI/UIView+Position.h"; sourceTree = "<group>"; };
+		DB785BCF141B0576005477A8 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Position.m"; path = "../CatKitUI/UIView+Position.m"; sourceTree = "<group>"; };
+		DB785BD6141B0900005477A8 /* libCatKitUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKitUI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB785BDA141B0900005477A8 /* CatKitUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatKitUI-Prefix.pch"; sourceTree = "<group>"; };
+		DB785BDB141B0900005477A8 /* CatKitUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitUI.h; sourceTree = "<group>"; };
+		DB785BDC141B0900005477A8 /* CatKitUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitUI.m; sourceTree = "<group>"; };
+		DB785BE3141B0900005477A8 /* CatKitUITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitUITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB785BED141B0900005477A8 /* CatKitUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatKitUITests-Info.plist"; sourceTree = "<group>"; };
+		DB785BEF141B0900005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB785BF1141B0900005477A8 /* CatKitUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitUITests.h; sourceTree = "<group>"; };
+		DB785BF3141B0900005477A8 /* CatKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitUITests.m; sourceTree = "<group>"; };
+		DB785BFE141B0B44005477A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB785C01141B0E95005477A8 /* UIView+Insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Insert.h"; path = "../CatKitUI/UIView+Insert.h"; sourceTree = "<group>"; };
+		DB785C02141B0E95005477A8 /* UIView+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Insert.m"; path = "../CatKitUI/UIView+Insert.m"; sourceTree = "<group>"; };
+		DB785C06141B13EE005477A8 /* UIViewPositionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewPositionTests.h; sourceTree = "<group>"; };
+		DB785C07141B13EE005477A8 /* UIViewPositionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewPositionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +105,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB785BD3141B0900005477A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BD7141B0900005477A8 /* Foundation.framework in Frameworks */,
+				DB785C00141B0B56005477A8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB785BDF141B0900005477A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BE4141B0900005477A8 /* SenTestingKit.framework in Frameworks */,
+				DB785BE5141B0900005477A8 /* UIKit.framework in Frameworks */,
+				DB785BE6141B0900005477A8 /* Foundation.framework in Frameworks */,
+				DB785BE7141B0900005477A8 /* CoreGraphics.framework in Frameworks */,
+				DB785BEA141B0900005477A8 /* libCatKitUI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +134,8 @@
 			children = (
 				DB785B9C141AFF8A005477A8 /* CatKit */,
 				DB785BB2141AFF8A005477A8 /* CatKitTests */,
+				DB785BD8141B0900005477A8 /* CatKitUI */,
+				DB785BEB141B0900005477A8 /* CatKitUITests */,
 				DB785B99141AFF8A005477A8 /* Frameworks */,
 				DB785B98141AFF8A005477A8 /* Products */,
 			);
@@ -88,6 +146,8 @@
 			children = (
 				DB785B97141AFF8A005477A8 /* libCatKit.a */,
 				DB785BA7141AFF8A005477A8 /* CatKitTests.octest */,
+				DB785BD6141B0900005477A8 /* libCatKitUI.a */,
+				DB785BE3141B0900005477A8 /* CatKitUITests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +155,7 @@
 		DB785B99141AFF8A005477A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB785BFE141B0B44005477A8 /* UIKit.framework */,
 				DB785B9A141AFF8A005477A8 /* Foundation.framework */,
 				DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */,
 				DB785BAA141AFF8A005477A8 /* UIKit.framework */,
@@ -106,7 +167,6 @@
 		DB785B9C141AFF8A005477A8 /* CatKit */ = {
 			isa = PBXGroup;
 			children = (
-				DB785BC4141B04E2005477A8 /* UIKit */,
 				DB785B9F141AFF8A005477A8 /* CatKit.h */,
 				DB785BA0141AFF8A005477A8 /* CatKit.m */,
 				DB785B9D141AFF8A005477A8 /* Supporting Files */,
@@ -147,6 +207,7 @@
 				DB785BC5141B04ED005477A8 /* UIView */,
 			);
 			name = UIKit;
+			path = ../CatKit;
 			sourceTree = "<group>";
 		};
 		DB785BC5141B04ED005477A8 /* UIView */ = {
@@ -154,6 +215,56 @@
 			children = (
 				DB785BCE141B0576005477A8 /* UIView+Position.h */,
 				DB785BCF141B0576005477A8 /* UIView+Position.m */,
+				DB785C01141B0E95005477A8 /* UIView+Insert.h */,
+				DB785C02141B0E95005477A8 /* UIView+Insert.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		DB785BD8141B0900005477A8 /* CatKitUI */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BC4141B04E2005477A8 /* UIKit */,
+				DB785BDB141B0900005477A8 /* CatKitUI.h */,
+				DB785BDC141B0900005477A8 /* CatKitUI.m */,
+				DB785BD9141B0900005477A8 /* Supporting Files */,
+			);
+			path = CatKitUI;
+			sourceTree = "<group>";
+		};
+		DB785BD9141B0900005477A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BDA141B0900005477A8 /* CatKitUI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB785BEB141B0900005477A8 /* CatKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB785C05141B13BA005477A8 /* UIView */,
+				DB785BF1141B0900005477A8 /* CatKitUITests.h */,
+				DB785BF3141B0900005477A8 /* CatKitUITests.m */,
+				DB785BEC141B0900005477A8 /* Supporting Files */,
+			);
+			path = CatKitUITests;
+			sourceTree = "<group>";
+		};
+		DB785BEC141B0900005477A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BED141B0900005477A8 /* CatKitUITests-Info.plist */,
+				DB785BEE141B0900005477A8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB785C05141B13BA005477A8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DB785C06141B13EE005477A8 /* UIViewPositionTests.h */,
+				DB785C07141B13EE005477A8 /* UIViewPositionTests.m */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -165,7 +276,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB785BD0141B0576005477A8 /* UIView+Position.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB785BD4141B0900005477A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BFC141B0ADD005477A8 /* UIView+Position.h in Headers */,
+				DB785C03141B0E95005477A8 /* UIView+Insert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +327,42 @@
 			productReference = DB785BA7141AFF8A005477A8 /* CatKitTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		DB785BD5141B0900005477A8 /* CatKitUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB785BF5141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUI" */;
+			buildPhases = (
+				DB785BD2141B0900005477A8 /* Sources */,
+				DB785BD3141B0900005477A8 /* Frameworks */,
+				DB785BD4141B0900005477A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatKitUI;
+			productName = CatKitUI;
+			productReference = DB785BD6141B0900005477A8 /* libCatKitUI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DB785BE2141B0900005477A8 /* CatKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB785BF8141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUITests" */;
+			buildPhases = (
+				DB785BDE141B0900005477A8 /* Sources */,
+				DB785BDF141B0900005477A8 /* Frameworks */,
+				DB785BE0141B0900005477A8 /* Resources */,
+				DB785BE1141B0900005477A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB785BE9141B0900005477A8 /* PBXTargetDependency */,
+			);
+			name = CatKitUITests;
+			productName = CatKitUITests;
+			productReference = DB785BE3141B0900005477A8 /* CatKitUITests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,6 +382,8 @@
 			targets = (
 				DB785B96141AFF8A005477A8 /* CatKit */,
 				DB785BA6141AFF8A005477A8 /* CatKitTests */,
+				DB785BD5141B0900005477A8 /* CatKitUI */,
+				DB785BE2141B0900005477A8 /* CatKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,10 +398,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB785BE0141B0900005477A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BF0141B0900005477A8 /* InfoPlist.strings in Resources */,
+				DB785BF2141B0900005477A8 /* CatKitUITests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		DB785BA5141AFF8A005477A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		DB785BE1141B0900005477A8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +444,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */,
-				DB785BD1141B0576005477A8 /* UIView+Position.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +455,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB785BD2141B0900005477A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BDD141B0900005477A8 /* CatKitUI.m in Sources */,
+				DB785BFD141B0AE2005477A8 /* UIView+Position.m in Sources */,
+				DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB785BDE141B0900005477A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB785BF4141B0900005477A8 /* CatKitUITests.m in Sources */,
+				DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -285,6 +482,11 @@
 			target = DB785B96141AFF8A005477A8 /* CatKit */;
 			targetProxy = DB785BAF141AFF8A005477A8 /* PBXContainerItemProxy */;
 		};
+		DB785BE9141B0900005477A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB785BD5141B0900005477A8 /* CatKitUI */;
+			targetProxy = DB785BE8141B0900005477A8 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -292,6 +494,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				DB785BB6141AFF8A005477A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB785BEE141B0900005477A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB785BEF141B0900005477A8 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -393,6 +603,68 @@
 			};
 			name = Release;
 		};
+		DB785BF6141B0900005477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CatKitUI.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB785BF7141B0900005477A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CatKitUI.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DB785BF9141B0900005477A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
+				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DB785BFA141B0900005477A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
+				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +690,22 @@
 			buildConfigurations = (
 				DB785BC2141AFF8A005477A8 /* Debug */,
 				DB785BC3141AFF8A005477A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB785BF5141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB785BF6141B0900005477A8 /* Debug */,
+				DB785BF7141B0900005477A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB785BF8141B0900005477A8 /* Build configuration list for PBXNativeTarget "CatKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB785BF9141B0900005477A8 /* Debug */,
+				DB785BFA141B0900005477A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
