@@ -25,8 +25,6 @@
 		DB785BE7141B0900005477A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */; };
 		DB785BEA141B0900005477A8 /* libCatKitUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BD6141B0900005477A8 /* libCatKitUI.a */; };
 		DB785BF0141B0900005477A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB785BEE141B0900005477A8 /* InfoPlist.strings */; };
-		DB785BF2141B0900005477A8 /* CatKitUITests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BF1141B0900005477A8 /* CatKitUITests.h */; };
-		DB785BF4141B0900005477A8 /* CatKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BF3141B0900005477A8 /* CatKitUITests.m */; };
 		DB785BFC141B0ADD005477A8 /* UIView+Position.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785BCE141B0576005477A8 /* UIView+Position.h */; };
 		DB785BFD141B0AE2005477A8 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BCF141B0576005477A8 /* UIView+Position.m */; };
 		DB785C00141B0B56005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BFE141B0B44005477A8 /* UIKit.framework */; };
@@ -75,8 +73,6 @@
 		DB785BE3141B0900005477A8 /* CatKitUITests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitUITests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785BED141B0900005477A8 /* CatKitUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatKitUITests-Info.plist"; sourceTree = "<group>"; };
 		DB785BEF141B0900005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DB785BF1141B0900005477A8 /* CatKitUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitUITests.h; sourceTree = "<group>"; };
-		DB785BF3141B0900005477A8 /* CatKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitUITests.m; sourceTree = "<group>"; };
 		DB785BFE141B0B44005477A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB785C01141B0E95005477A8 /* UIView+Insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Insert.h"; path = "../CatKitUI/UIView+Insert.h"; sourceTree = "<group>"; };
 		DB785C02141B0E95005477A8 /* UIView+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Insert.m"; path = "../CatKitUI/UIView+Insert.m"; sourceTree = "<group>"; };
@@ -244,8 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				DB785C05141B13BA005477A8 /* UIView */,
-				DB785BF1141B0900005477A8 /* CatKitUITests.h */,
-				DB785BF3141B0900005477A8 /* CatKitUITests.m */,
 				DB785BEC141B0900005477A8 /* Supporting Files */,
 			);
 			path = CatKitUITests;
@@ -403,7 +397,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB785BF0141B0900005477A8 /* InfoPlist.strings in Resources */,
-				DB785BF2141B0900005477A8 /* CatKitUITests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB785BF4141B0900005477A8 /* CatKitUITests.m in Sources */,
 				DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +504,7 @@
 		DB785BBC141AFF8A005477A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -535,7 +527,7 @@
 		DB785BBD141AFF8A005477A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -606,6 +598,7 @@
 		DB785BF6141B0900005477A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DSTROOT = /tmp/CatKitUI.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,15 +606,20 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
 		DB785BF7141B0900005477A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				DSTROOT = /tmp/CatKitUI.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -629,15 +627,20 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Release;
 		};
 		DB785BF9141B0900005477A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -645,7 +648,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -653,6 +661,7 @@
 		DB785BFA141B0900005477A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -660,7 +669,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

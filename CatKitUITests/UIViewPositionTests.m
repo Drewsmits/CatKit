@@ -9,10 +9,10 @@
 #import "UIViewPositionTests.h"
 #import "UIView+Position.h"
 
-static NSInteger kViewLeft   = 5;
-static NSInteger kViewRight  = 5;
-static NSInteger kViewWidth  = 100;
-static NSInteger kViewHeight = 100;
+static CGFloat kViewLeft   = 5;
+static CGFloat kViewRight  = 5;
+static CGFloat kViewWidth  = 100;
+static CGFloat kViewHeight = 100;
 
 
 @implementation UIViewPositionTests
@@ -39,6 +39,13 @@ static NSInteger kViewHeight = 100;
     view.left = kViewLeft;
     
     STAssertEquals(view.frame.origin.x, kViewLeft, @"View left should be set correctly");
+}
+
+- (void)testRight {
+    
+    view.right = kViewRight;
+    
+    STAssertEquals(view.frame.origin.x + view.frame.size.width, kViewRight, @"View left should be set correctly");
 }
 
 @end
