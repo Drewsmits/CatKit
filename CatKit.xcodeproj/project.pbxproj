@@ -32,14 +32,14 @@
 /* Begin PBXFileReference section */
 		DB785B97141AFF8A005477A8 /* libCatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785B9A141AFF8A005477A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DB785B9E141AFF8A005477A8 /* CatKit-Prefix.pch */ = {isa = PBXFileReference; path = "CatKit-Prefix.pch"; sourceTree = "<group>"; };
-		DB785B9F141AFF8A005477A8 /* CatKit.h */ = {isa = PBXFileReference; path = CatKit.h; sourceTree = "<group>"; };
+		DB785B9E141AFF8A005477A8 /* CatKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatKit-Prefix.pch"; sourceTree = "<group>"; };
+		DB785B9F141AFF8A005477A8 /* CatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKit.h; sourceTree = "<group>"; };
 		DB785BA0141AFF8A005477A8 /* CatKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKit.m; sourceTree = "<group>"; };
 		DB785BA7141AFF8A005477A8 /* CatKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB785BAA141AFF8A005477A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB785BAD141AFF8A005477A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		DB785BB4141AFF8A005477A8 /* CatKitTests-Info.plist */ = {isa = PBXFileReference; path = "CatKitTests-Info.plist"; sourceTree = "<group>"; };
+		DB785BB4141AFF8A005477A8 /* CatKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CatKitTests-Info.plist"; sourceTree = "<group>"; };
 		DB785BB6141AFF8A005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB785BB8141AFF8A005477A8 /* CatKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitTests.h; sourceTree = "<group>"; };
 		DB785BBA141AFF8A005477A8 /* CatKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitTests.m; sourceTree = "<group>"; };
