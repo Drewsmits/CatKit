@@ -17,6 +17,8 @@
 		DB785BB7141AFF8A005477A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB5141AFF8A005477A8 /* InfoPlist.strings */; };
 		DB785BB9141AFF8A005477A8 /* CatKitTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DB785BB8141AFF8A005477A8 /* CatKitTests.h */; };
 		DB785BBB141AFF8A005477A8 /* CatKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BBA141AFF8A005477A8 /* CatKitTests.m */; };
+		DB785BD0141B0576005477A8 /* UIView+Position.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785BCE141B0576005477A8 /* UIView+Position.h */; };
+		DB785BD1141B0576005477A8 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BCF141B0576005477A8 /* UIView+Position.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		DB785BB6141AFF8A005477A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB785BB8141AFF8A005477A8 /* CatKitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKitTests.h; sourceTree = "<group>"; };
 		DB785BBA141AFF8A005477A8 /* CatKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKitTests.m; sourceTree = "<group>"; };
+		DB785BCE141B0576005477A8 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
+		DB785BCF141B0576005477A8 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		DB785B9C141AFF8A005477A8 /* CatKit */ = {
 			isa = PBXGroup;
 			children = (
+				DB785BC4141B04E2005477A8 /* UIKit */,
 				DB785B9F141AFF8A005477A8 /* CatKit.h */,
 				DB785BA0141AFF8A005477A8 /* CatKit.m */,
 				DB785B9D141AFF8A005477A8 /* Supporting Files */,
@@ -136,6 +141,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DB785BC4141B04E2005477A8 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BC5141B04ED005477A8 /* UIView */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		DB785BC5141B04ED005477A8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				DB785BCE141B0576005477A8 /* UIView+Position.h */,
+				DB785BCF141B0576005477A8 /* UIView+Position.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -143,6 +165,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB785BD0141B0576005477A8 /* UIView+Position.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */,
+				DB785BD1141B0576005477A8 /* UIView+Position.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
