@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DB73EB17141B4960000D904E /* UIViewInsertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73EB16141B4960000D904E /* UIViewInsertTests.m */; };
 		DB785B9B141AFF8A005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
-		DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785BA0141AFF8A005477A8 /* CatKit.m */; };
 		DB785BA9141AFF8A005477A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */; };
 		DB785BAB141AFF8A005477A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785BAA141AFF8A005477A8 /* UIKit.framework */; };
 		DB785BAC141AFF8A005477A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB785B9A141AFF8A005477A8 /* Foundation.framework */; };
@@ -56,8 +55,6 @@
 		DB785B97141AFF8A005477A8 /* libCatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785B9A141AFF8A005477A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB785B9E141AFF8A005477A8 /* CatKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatKit-Prefix.pch"; sourceTree = "<group>"; };
-		DB785B9F141AFF8A005477A8 /* CatKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatKit.h; sourceTree = "<group>"; };
-		DB785BA0141AFF8A005477A8 /* CatKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatKit.m; sourceTree = "<group>"; };
 		DB785BA7141AFF8A005477A8 /* CatKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB785BA8141AFF8A005477A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB785BAA141AFF8A005477A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -137,9 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DB785B9C141AFF8A005477A8 /* CatKit */,
-				DB785BB2141AFF8A005477A8 /* CatKitTests */,
 				DB785BD8141B0900005477A8 /* CatKitUI */,
-				DB785BEB141B0900005477A8 /* CatKitUITests */,
 				DB785B99141AFF8A005477A8 /* Frameworks */,
 				DB785B98141AFF8A005477A8 /* Products */,
 			);
@@ -171,8 +166,7 @@
 		DB785B9C141AFF8A005477A8 /* CatKit */ = {
 			isa = PBXGroup;
 			children = (
-				DB785B9F141AFF8A005477A8 /* CatKit.h */,
-				DB785BA0141AFF8A005477A8 /* CatKit.m */,
+				DB785BB2141AFF8A005477A8 /* Tests */,
 				DB785B9D141AFF8A005477A8 /* Supporting Files */,
 			);
 			path = CatKit;
@@ -186,15 +180,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DB785BB2141AFF8A005477A8 /* CatKitTests */ = {
+		DB785BB2141AFF8A005477A8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				DB785BB8141AFF8A005477A8 /* CatKitTests.h */,
 				DB785BBA141AFF8A005477A8 /* CatKitTests.m */,
 				DB785BB3141AFF8A005477A8 /* Supporting Files */,
 			);
+			name = Tests;
 			path = CatKitTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		DB785BB3141AFF8A005477A8 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -229,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				DB785BC4141B04E2005477A8 /* UIKit */,
+				DB785BEB141B0900005477A8 /* Tests */,
 				DB785BD9141B0900005477A8 /* Supporting Files */,
 			);
 			path = CatKitUI;
@@ -242,14 +238,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DB785BEB141B0900005477A8 /* CatKitUITests */ = {
+		DB785BEB141B0900005477A8 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				DB73EB14141B48E8000D904E /* UIKit */,
 				DB785BEC141B0900005477A8 /* Supporting Files */,
 			);
+			name = Tests;
 			path = CatKitUITests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		DB785BEC141B0900005477A8 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -444,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB785BA1141AFF8A005477A8 /* CatKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
