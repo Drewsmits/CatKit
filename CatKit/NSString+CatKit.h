@@ -1,0 +1,18 @@
+//
+//  NSString+CatKit.h
+//  CatKit
+//
+//  Created by Andrew Smith on 10/19/11.
+//  Copyright (c) 2011 Andrew B. Smith. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface NSString (CatKit)
+
+- (NSString*)urlEncodedString;
+
+// See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataRequest.m
+- (NSString *)urlEncodedStringWithEncoding:(NSStringEncoding)encoding;
+
+@end
