@@ -134,4 +134,13 @@
     return round(self.center.y);
 }
 
+- (void)setCenterAligned:(CGPoint)centerAligned {
+    self.centerXAligned = centerAligned.x;
+    self.centerYAligned = centerAligned.y;
+}
+
+- (CGPoint)centerAligned {
+    return CGPointMake(round(self.center.x), round(self.center.y));
+}
+
 @end

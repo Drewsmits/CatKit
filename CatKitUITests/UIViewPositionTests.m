@@ -167,4 +167,21 @@ static CGFloat kViewAltHeight = 103;
                    @"View center y aligned should be set correctly");
 }
 
+- (void)testCenterAligned {
+
+    CGFloat centerXish = kViewCenterX + 0.2;
+    CGFloat centerYish = kViewCenterY + 0.4;
+    
+    view.centerAligned = CGPointMake(centerXish, centerYish);
+
+    STAssertEquals(view.center.x, 
+                   kViewCenterX, 
+                   @"View center x aligned should be set correctly");
+    
+    STAssertEquals(view.center.y, 
+                   kViewCenterY, 
+                   @"View center y aligned should be set correctly");
+
+}
+
 @end

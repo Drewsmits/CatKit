@@ -28,5 +28,7 @@
 @property (nonatomic, assign) CGFloat centerXAligned;
 @property (nonatomic, assign) CGFloat centerYAligned;
 
+@property (nonatomic, assign) CGPoint centerAligned;
+
 
 @end
