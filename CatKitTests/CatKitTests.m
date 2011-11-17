@@ -8,6 +8,8 @@
 
 #import "CatKitTests.h"
 #import "NSString+CatKit.h"
+#import "CKCommonMacros.h"
+
 
 @implementation CatKitTests
 
@@ -34,6 +36,24 @@
     STAssertFalse([example2 isEmailAddress], @"String should not be an email");
     STAssertFalse([example3 isEmailAddress], @"String should not be an email");
     STAssertTrue([example4 isEmailAddress], @"String should be an email");
+}
+
+#pragma mark - Macros
+
+- (void)testIsEmpty {
+    
+    NSString *notEmpty = @"abcdefg";
+    NSString *empty = @"";
+    NSString *nilString = nil;
+    
+    NSArray *emptyArray = [NSArray array];
+    NSArray *notEmptyArray = [NSArray arrayWithObject:@"object"];
+    
+    STAssertFalse(IsEmpty(notEmpty), @"Should not be empty");
+    STAssertTrue(IsEmpty(empty), @"Should be empty");
+    STAssertTrue(IsEmpty(nilString), @"Should be empty");
+    STAssertTrue(IsEmpty(emptyArray), @"Should be empty");
+    STAssertFalse(IsEmpty(notEmptyArray), @"Should not be empty");
 }
 
 @end
