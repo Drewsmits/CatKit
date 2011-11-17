@@ -3,7 +3,7 @@
 //  CatKit
 //
 //  Created by Andrew Smith on 9/10/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Andrew B. Smith. All rights reserved.
 //
 
 #import "UIViewInsertTests.h"

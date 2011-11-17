@@ -12,7 +12,14 @@
 
 - (NSString*)urlEncodedString;
 
-// See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataRequest.m
+/**
+See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataRequest.m
+ */
 - (NSString *)urlEncodedStringWithEncoding:(NSStringEncoding)encoding;
+
+/**
+ Uses regex to check and see if string is an email address.
+ */
+- (BOOL)isEmailAddress;
 
 @end
