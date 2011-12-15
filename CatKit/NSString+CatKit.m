@@ -36,4 +36,9 @@
     return [emailTest evaluateWithObject:self];
 }
 
+- (NSString *)lowercaseFirstLetterOnlyString {
+    NSString *firstCharacterInString = [[self substringToIndex:1] lowercaseString];
+    return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];
+}
+
 @end

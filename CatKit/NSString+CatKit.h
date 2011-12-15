@@ -22,4 +22,9 @@ See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataReque
  */
 - (BOOL)isEmailAddress;
 
+/**
+ Lowercase the first letter of the string
+ */
+- (NSString *)lowercaseFirstLetterOnlyString;
+
 @end

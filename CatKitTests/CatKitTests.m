@@ -38,6 +38,23 @@
     STAssertTrue([example4 isEmailAddress], @"String should be an email");
 }
 
+- (void)testLowercaseFirstLetterOnlyString {
+    
+    NSString *example1 = @"SomethingWeird";
+    NSString *answer1 = @"somethingWeird";
+    
+    NSString *example2 = @"OMGLOLBBQ";
+    NSString *answer2 = @"oMGLOLBBQ";
+    
+    
+    STAssertTrue((example1 != answer1), @"Strings should not be equal");
+    STAssertTrue((example2 != answer2), @"Strings should not be equal");
+
+    STAssertEqualObjects([example1 lowercaseFirstLetterOnlyString], answer1, @"String should have lowercase first letter");
+    STAssertEqualObjects([example2 lowercaseFirstLetterOnlyString], answer2, @"String should have lowercase first letter");
+
+}
+
 #pragma mark - Macros
 
 - (void)testIsEmpty {
