@@ -36,7 +36,7 @@
 		DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C07141B13EE005477A8 /* UIViewPositionTests.m */; };
 		DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D100144F9B2400D94890 /* NSString+CatKit.m */; };
-		DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */; };
+		DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */; };
 		DBB6B4F214BE4CA30043F5D1 /* UILabelSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */; };
 /* End PBXBuildFile section */
