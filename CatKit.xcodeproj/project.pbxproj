@@ -36,6 +36,9 @@
 		DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C07141B13EE005477A8 /* UIViewPositionTests.m */; };
 		DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D100144F9B2400D94890 /* NSString+CatKit.m */; };
+		DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */; };
+		DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */; };
+		DBB6B4F214BE4CA30043F5D1 /* UILabelSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,10 @@
 		DB785C07141B13EE005477A8 /* UIViewPositionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewPositionTests.m; sourceTree = "<group>"; };
 		DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CatKit.h"; sourceTree = "<group>"; };
 		DB83D100144F9B2400D94890 /* NSString+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CatKit.m"; sourceTree = "<group>"; };
+		DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "CatKitUI/UILabel+Size.h"; sourceTree = SOURCE_ROOT; };
+		DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "CatKitUI/UILabel+Size.m"; sourceTree = SOURCE_ROOT; };
+		DBB6B4F014BE4CA30043F5D1 /* UILabelSizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelSizeTests.h; sourceTree = "<group>"; };
+		DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelSizeTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +161,7 @@
 		DB73EB14141B48E8000D904E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DBB6B4EF14BE4C790043F5D1 /* UILabel */,
 				DB785C05141B13BA005477A8 /* UIView */,
 			);
 			name = UIKit;
@@ -234,8 +242,9 @@
 		DB785BC4141B04E2005477A8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				DB785BC5141B04ED005477A8 /* UIView */,
+				DBB6B4E914BE4AE40043F5D1 /* UILabel */,
 				DB2C3F6C146339530055493F /* UITouch */,
+				DB785BC5141B04ED005477A8 /* UIView */,
 			);
 			name = UIKit;
 			path = ../CatKit;
@@ -310,6 +319,24 @@
 			name = Foundation;
 			sourceTree = "<group>";
 		};
+		DBB6B4E914BE4AE40043F5D1 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */,
+				DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
+		DBB6B4EF14BE4C790043F5D1 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				DBB6B4F014BE4CA30043F5D1 /* UILabelSizeTests.h */,
+				DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -330,6 +357,7 @@
 				DB785C03141B0E95005477A8 /* UIView+Insert.h in Headers */,
 				DB72CFF71459FD2900231360 /* CatKitUI.h in Headers */,
 				DB2C3F701463398A0055493F /* UITouch+OpenGL.h in Headers */,
+				DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +538,7 @@
 				DB785BFD141B0AE2005477A8 /* UIView+Position.m in Sources */,
 				DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */,
 				DB2C3F711463398A0055493F /* UITouch+OpenGL.m in Sources */,
+				DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +548,7 @@
 			files = (
 				DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */,
 				DB73EB17141B4960000D904E /* UIViewInsertTests.m in Sources */,
+				DBB6B4F214BE4CA30043F5D1 /* UILabelSizeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
