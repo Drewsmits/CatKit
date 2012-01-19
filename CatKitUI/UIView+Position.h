@@ -30,5 +30,8 @@
 
 @property (nonatomic, assign) CGPoint centerAligned;
 
+@property (nonatomic, readonly) CGRect absoluteFrame;
+@property (nonatomic, readonly) CGRect absoluteBounds;
+
 
 @end

@@ -143,4 +143,12 @@
     return CGPointMake(round(self.center.x), round(self.center.y));
 }
 
+- (CGRect)absoluteFrame {
+    return [self convertRect:self.frame toView:nil];
+}
+
+- (CGRect)absoluteBounds {
+    return [self convertRect:self.bounds toView:nil];
+}
+
 @end
