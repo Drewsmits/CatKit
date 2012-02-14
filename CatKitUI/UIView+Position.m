@@ -119,7 +119,7 @@
 }
 
 - (void)setCenterXAligned:(CGFloat)val {
-    self.center = CGPointMake(round(val), self.center.y);
+    self.leftAligned = val - self.width / 2.0;
 }
 
 - (CGFloat)centerXAligned {
@@ -127,7 +127,7 @@
 }
 
 - (void)setCenterYAligned:(CGFloat)val {
-    self.center = CGPointMake(self.center.x, round(val));
+    self.topAligned = val - self.height / 2.0;
 }
 
 - (CGFloat)centerYAligned {
