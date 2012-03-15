@@ -36,6 +36,8 @@
 		DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C07141B13EE005477A8 /* UIViewPositionTests.m */; };
 		DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D100144F9B2400D94890 /* NSString+CatKit.m */; };
+		DBAAA63A15116125004C1532 /* NSFileManager+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBAAA63B15116125004C1532 /* NSFileManager+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */; };
 		DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */; };
 		DBB6B4F214BE4CA30043F5D1 /* UILabelSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */; };
@@ -90,6 +92,8 @@
 		DB785C07141B13EE005477A8 /* UIViewPositionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewPositionTests.m; sourceTree = "<group>"; };
 		DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CatKit.h"; sourceTree = "<group>"; };
 		DB83D100144F9B2400D94890 /* NSString+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CatKit.m"; sourceTree = "<group>"; };
+		DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CatKit.h"; sourceTree = "<group>"; };
+		DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CatKit.m"; sourceTree = "<group>"; };
 		DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "CatKitUI/UILabel+Size.h"; sourceTree = SOURCE_ROOT; };
 		DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "CatKitUI/UILabel+Size.m"; sourceTree = SOURCE_ROOT; };
 		DBB6B4F014BE4CA30043F5D1 /* UILabelSizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelSizeTests.h; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 			children = (
 				DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */,
 				DB83D100144F9B2400D94890 /* NSString+CatKit.m */,
+				DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */,
+				DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 			files = (
 				DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */,
 				DB5F9E2A147595DC00F0DCD3 /* CKCommonMacros.h in Headers */,
+				DBAAA63A15116125004C1532 /* NSFileManager+CatKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */,
+				DBAAA63B15116125004C1532 /* NSFileManager+CatKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

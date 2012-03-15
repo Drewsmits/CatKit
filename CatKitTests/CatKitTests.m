@@ -8,6 +8,7 @@
 
 #import "CatKitTests.h"
 #import "NSString+CatKit.h"
+#import "NSFileManager+CatKit.h"
 #import "CKCommonMacros.h"
 
 
@@ -71,6 +72,48 @@
     STAssertTrue(IsEmpty(nilString), @"Should be empty");
     STAssertTrue(IsEmpty(emptyArray), @"Should be empty");
     STAssertFalse(IsEmpty(notEmptyArray), @"Should not be empty");
+}
+
+#pragma mark - NSFileManager
+
+- (void)testNSFileManagerSaveFileAndCreateSubDirs {
+    
+    NSString *homeDir = NSHomeDirectory();
+    NSString *tempDir = [homeDir stringByAppendingString:@"/temp"];
+    
+    NSString *filePath = [tempDir stringByAppendingString:@"/folder1/folder2/temp.txt"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    BOOL fileCreated = [fileManager createFileAtPath:filePath 
+                         withIntermediateDirectories:YES 
+                                            contents:nil 
+                                          attributes:nil];
+    
+    // cleanup temp dir
+    [fileManager removeItemAtPath:tempDir error:nil];
+    
+    STAssertTrue(fileCreated, @"Should save file");
+}
+
+- (void)testNSFileManagerSaveFileDontCreateSubDirs {
+    
+    NSString *homeDir = NSHomeDirectory();
+    NSString *tempDir = [homeDir stringByAppendingString:@"/temp"];
+    
+    NSString *filePath = [tempDir stringByAppendingString:@"/folder1/folder2/temp.txt"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    BOOL fileCreated = [fileManager createFileAtPath:filePath 
+                         withIntermediateDirectories:NO 
+                                            contents:nil 
+                                          attributes:nil];
+    
+    // cleanup temp dir
+    [fileManager removeItemAtPath:tempDir error:nil];
+    
+    STAssertFalse(fileCreated, @"Should save file");
 }
 
 @end
