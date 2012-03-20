@@ -449,7 +449,7 @@
 		DB785B8E141AFF89005477A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Andrew B. Smith";
 			};
 			buildConfigurationList = DB785B91141AFF89005477A8 /* Build configuration list for PBXProject "CatKit" */;
