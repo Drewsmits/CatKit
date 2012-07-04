@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		DB2C3F701463398A0055493F /* UITouch+OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB2C3F711463398A0055493F /* UITouch+OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */; };
+		DB599861159FBDD300AB65C9 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB599862159FBDD300AB65C9 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = DB599860159FBDD200AB65C9 /* UIImage+Resize.m */; };
+		DB599866159FBE8A00AB65C9 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB599867159FBE8A00AB65C9 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = DB599865159FBE8A00AB65C9 /* UIImage+RoundedCorner.m */; };
+		DB59986A159FBEB800AB65C9 /* UIImage+Alpha.h in Headers */ = {isa = PBXBuildFile; fileRef = DB599868159FBEB800AB65C9 /* UIImage+Alpha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB59986B159FBEB800AB65C9 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = DB599869159FBEB800AB65C9 /* UIImage+Alpha.m */; };
 		DB5F9E2A147595DC00F0DCD3 /* CKCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5F9E29147595DC00F0DCD3 /* CKCommonMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB72CFF71459FD2900231360 /* CatKitUI.h in Headers */ = {isa = PBXBuildFile; fileRef = DB72CFF61459FD2900231360 /* CatKitUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB73EB17141B4960000D904E /* UIViewInsertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73EB16141B4960000D904E /* UIViewInsertTests.m */; };
@@ -38,9 +44,13 @@
 		DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D100144F9B2400D94890 /* NSString+CatKit.m */; };
 		DBAAA63A15116125004C1532 /* NSFileManager+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBAAA63B15116125004C1532 /* NSFileManager+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */; };
+		DBB112D8159FD3D5002218F9 /* UIImage+Orientation.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB112D6159FD3D4002218F9 /* UIImage+Orientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB112D9159FD3D5002218F9 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB112D7159FD3D4002218F9 /* UIImage+Orientation.m */; };
 		DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */; };
 		DBB6B4F214BE4CA30043F5D1 /* UILabelSizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */; };
+		DBD3B5BF152E371100CED2E3 /* UIImage+Crop.h in Headers */ = {isa = PBXBuildFile; fileRef = DBD3B5BD152E371100CED2E3 /* UIImage+Crop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD3B5C0152E371100CED2E3 /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = DBD3B5BE152E371100CED2E3 /* UIImage+Crop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,12 @@
 /* Begin PBXFileReference section */
 		DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITouch+OpenGL.h"; path = "CatKitUI/UITouch+OpenGL.h"; sourceTree = SOURCE_ROOT; };
 		DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITouch+OpenGL.m"; path = "CatKitUI/UITouch+OpenGL.m"; sourceTree = SOURCE_ROOT; };
+		DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		DB599860159FBDD200AB65C9 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		DB599865159FBE8A00AB65C9 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		DB599868159FBEB800AB65C9 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		DB599869159FBEB800AB65C9 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		DB5F9E29147595DC00F0DCD3 /* CKCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCommonMacros.h; sourceTree = "<group>"; };
 		DB72CFF61459FD2900231360 /* CatKitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatKitUI.h; path = ../CatKit/CatKitUI.h; sourceTree = "<group>"; };
 		DB73EB15141B4960000D904E /* UIViewInsertTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewInsertTests.h; sourceTree = "<group>"; };
@@ -94,10 +110,14 @@
 		DB83D100144F9B2400D94890 /* NSString+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CatKit.m"; sourceTree = "<group>"; };
 		DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CatKit.h"; sourceTree = "<group>"; };
 		DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CatKit.m"; sourceTree = "<group>"; };
+		DBB112D6159FD3D4002218F9 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		DBB112D7159FD3D4002218F9 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
 		DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "CatKitUI/UILabel+Size.h"; sourceTree = SOURCE_ROOT; };
 		DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "CatKitUI/UILabel+Size.m"; sourceTree = SOURCE_ROOT; };
 		DBB6B4F014BE4CA30043F5D1 /* UILabelSizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelSizeTests.h; sourceTree = "<group>"; };
 		DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelSizeTests.m; sourceTree = "<group>"; };
+		DBD3B5BD152E371100CED2E3 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		DBD3B5BE152E371100CED2E3 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +266,7 @@
 		DB785BC4141B04E2005477A8 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				DBD3B5BB152E36F000CED2E3 /* UIImage */,
 				DBB6B4E914BE4AE40043F5D1 /* UILabel */,
 				DB2C3F6C146339530055493F /* UITouch */,
 				DB785BC5141B04ED005477A8 /* UIView */,
@@ -343,6 +364,23 @@
 			name = UILabel;
 			sourceTree = "<group>";
 		};
+		DBD3B5BB152E36F000CED2E3 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				DBD3B5BD152E371100CED2E3 /* UIImage+Crop.h */,
+				DBD3B5BE152E371100CED2E3 /* UIImage+Crop.m */,
+				DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */,
+				DB599860159FBDD200AB65C9 /* UIImage+Resize.m */,
+				DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */,
+				DB599865159FBE8A00AB65C9 /* UIImage+RoundedCorner.m */,
+				DB599868159FBEB800AB65C9 /* UIImage+Alpha.h */,
+				DB599869159FBEB800AB65C9 /* UIImage+Alpha.m */,
+				DBB112D6159FD3D4002218F9 /* UIImage+Orientation.h */,
+				DBB112D7159FD3D4002218F9 /* UIImage+Orientation.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -365,6 +403,11 @@
 				DB72CFF71459FD2900231360 /* CatKitUI.h in Headers */,
 				DB2C3F701463398A0055493F /* UITouch+OpenGL.h in Headers */,
 				DBB6B4ED14BE4B0F0043F5D1 /* UILabel+Size.h in Headers */,
+				DBD3B5BF152E371100CED2E3 /* UIImage+Crop.h in Headers */,
+				DB599861159FBDD300AB65C9 /* UIImage+Resize.h in Headers */,
+				DB599866159FBE8A00AB65C9 /* UIImage+RoundedCorner.h in Headers */,
+				DB59986A159FBEB800AB65C9 /* UIImage+Alpha.h in Headers */,
+				DBB112D8159FD3D5002218F9 /* UIImage+Orientation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +590,11 @@
 				DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */,
 				DB2C3F711463398A0055493F /* UITouch+OpenGL.m in Sources */,
 				DBB6B4EE14BE4B0F0043F5D1 /* UILabel+Size.m in Sources */,
+				DBD3B5C0152E371100CED2E3 /* UIImage+Crop.m in Sources */,
+				DB599862159FBDD300AB65C9 /* UIImage+Resize.m in Sources */,
+				DB599867159FBE8A00AB65C9 /* UIImage+RoundedCorner.m in Sources */,
+				DB59986B159FBEB800AB65C9 /* UIImage+Alpha.m in Sources */,
+				DBB112D9159FD3D5002218F9 /* UIImage+Orientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,7 +692,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKit/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKit;
@@ -661,7 +709,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKit/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKit;
@@ -682,7 +730,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/CatKit";
 				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -701,7 +749,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/CatKit";
 				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -717,10 +765,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKitUI/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKitUI;
@@ -739,10 +784,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKitUI/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKitUI;
@@ -763,10 +805,7 @@
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
@@ -785,10 +824,7 @@
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
