@@ -60,15 +60,6 @@
     return request;
 }
 
-+ (NSPropertyDescription *)propertyDescriptionForProperty:(NSString *)propertyName 
-                                                inContext:(NSManagedObjectContext *)context
-{
-    NSEntityDescription *entity = [NSEntityDescription entityForName:[self description]
-                                              inManagedObjectContext:context];
-    NSDictionary *properties = [entity propertiesByName];
-    return [properties objectForKey:propertyName];    
-}
-
 #pragma mark - Find
 
 + (NSArray *)findAllInContext:(NSManagedObjectContext *)context 
@@ -160,11 +151,11 @@
 
 #pragma mark - Fetch
 
-+ (id)executeFetchRequest:(NSFetchRequest *)request
++ (NSArray *)executeFetchRequest:(NSFetchRequest *)request
                 inContext:(NSManagedObjectContext *)context
 {
     NSError *error = nil;
-    id results = [context executeFetchRequest:request error:&error];
+    NSArray *results = [context executeFetchRequest:request error:&error];
     [self handleErrors:error];
     return results;
 }
@@ -192,6 +183,31 @@
 - (NSURL *)objectURI 
 {
     return self.objectID.URIRepresentation;
+}
+
++ (NSManagedObject *)objectForURI:(NSURL *)objectURI 
+                        inContext:(NSManagedObjectContext *)context
+{
+    NSManagedObjectID *objectID = [[context persistentStoreCoordinator] managedObjectIDForURIRepresentation:objectURI];
+    if (!objectID) return nil;
+    
+    NSManagedObject *objectForID = [context objectWithID:objectID];
+    if (![objectForID isFault]) return objectForID;
+    
+    NSFetchRequest *request = [self fetchRequestInContext:context];
+    
+    // Predicate for fetching self.  Code is faster than string predicate equivalent of 
+    // [NSPredicate predicateWithFormat:@"SELF = %@", objectForID];
+    NSPredicate *predicate = [NSComparisonPredicate predicateWithLeftExpression:[NSExpression expressionForEvaluatedObject] 
+                                                                rightExpression:[NSExpression expressionForConstantValue:objectForID]
+                                                                       modifier:NSDirectPredicateModifier
+                                                                           type:NSEqualToPredicateOperatorType
+                                                                        options:0];
+    [request setPredicate:predicate];
+    
+    return [self executeFetchRequest:request 
+                           inContext:context];
+    
 }
 
 - (BOOL)hasBeenDeleted 

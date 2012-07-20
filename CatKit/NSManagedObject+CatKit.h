@@ -14,9 +14,6 @@
 
 + (NSFetchRequest *)fetchRequestInContext:(NSManagedObjectContext *)context;
 
-+ (NSPropertyDescription *)propertyDescriptionForProperty:(NSString *)propertyName 
-                                                inContext:(NSManagedObjectContext *)context;
-
 + (NSArray *)findAllInContext:(NSManagedObjectContext *)context;
 
 + (NSArray *)findAllInContext:(NSManagedObjectContext *)context
@@ -38,11 +35,6 @@
        includesPropertyValues:(BOOL)propertyValues
           includesSubentities:(BOOL)subentities;
 
-- (void)saveInContext:(NSManagedObjectContext *)context;
-
-- (void)deleteObjectinContext:(NSManagedObjectContext *)context
-                      andSave:(BOOL)save;
-
 + (id)executeFetchRequest:(NSFetchRequest *)request
                 inContext:(NSManagedObjectContext *)context;
 
@@ -52,7 +44,15 @@
 + (NSUInteger)numberOfEntitiesForFetchRequest:(NSFetchRequest *)request
                                     inContext:(NSManagedObjectContext *)context;
 
+- (void)saveInContext:(NSManagedObjectContext *)context;
+
+- (void)deleteObjectinContext:(NSManagedObjectContext *)context
+                      andSave:(BOOL)save;
+
 - (NSURL *)objectURI;
+
++ (NSManagedObject *)objectForURI:(NSURL *)objectURI 
+                        inContext:(NSManagedObjectContext *)context;
 
 - (BOOL)hasBeenDeleted;
 
