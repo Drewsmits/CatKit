@@ -12,49 +12,4 @@
 
 + (id)createInContext:(NSManagedObjectContext *)context;
 
-+ (NSFetchRequest *)fetchRequestInContext:(NSManagedObjectContext *)context;
-
-+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context;
-
-+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context
-            matchingPredicate:(NSPredicate *)predicate;
-
-+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context
-            matchingPredicate:(NSPredicate *)predicate 
-                        limit:(NSUInteger)limit;
-
-+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context
-            matchingPredicate:(NSPredicate *)predicate 
-                        limit:(NSUInteger)limit
-                       sortBy:(NSArray *)sortDescriptors;
-
-+ (NSArray *)findAllInContext:(NSManagedObjectContext *)context
-            matchingPredicate:(NSPredicate *)predicate 
-                        limit:(NSUInteger)limit
-                       sortBy:(NSArray *)sortDescriptors
-       includesPropertyValues:(BOOL)propertyValues
-          includesSubentities:(BOOL)subentities;
-
-+ (id)executeFetchRequest:(NSFetchRequest *)request
-                inContext:(NSManagedObjectContext *)context;
-
-+ (id)executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)request 
-                                    inContext:(NSManagedObjectContext *)context;
-
-+ (NSUInteger)numberOfEntitiesForFetchRequest:(NSFetchRequest *)request
-                                    inContext:(NSManagedObjectContext *)context;
-
-- (void)saveInContext:(NSManagedObjectContext *)context;
-
-- (void)deleteObjectinContext:(NSManagedObjectContext *)context
-                      andSave:(BOOL)save;
-
-- (NSURL *)objectURI;
-
-+ (NSManagedObject *)objectForURI:(NSURL *)objectURI 
-                        inContext:(NSManagedObjectContext *)context;
-
-- (BOOL)hasBeenDeleted;
-
-
 @end

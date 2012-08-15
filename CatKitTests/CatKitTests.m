@@ -26,17 +26,19 @@
 
 #pragma mark - NSString
 
-- (void)testIsStringEmail {
-    
+- (void)testIsStringEmail
+{    
     NSString *example1 = @"john@gmail.com";
     NSString *example2 = @"notanemail.com";
     NSString *example3 = @"part.of.email@wha";
     NSString *example4 = @"this.should.pass@something.ly";
+    NSString *example5 = @"shouldSupportUpperCase@gmail.com";
 
     STAssertTrue([example1 isEmailAddress], @"String should be an email");
     STAssertFalse([example2 isEmailAddress], @"String should not be an email");
     STAssertFalse([example3 isEmailAddress], @"String should not be an email");
     STAssertTrue([example4 isEmailAddress], @"String should be an email");
+    STAssertTrue([example5 isEmailAddress], @"String should be an email");
 }
 
 - (void)testLowercaseFirstLetterOnlyString {
@@ -46,7 +48,6 @@
     
     NSString *example2 = @"OMGLOLBBQ";
     NSString *answer2 = @"oMGLOLBBQ";
-    
     
     STAssertTrue((example1 != answer1), @"Strings should not be equal");
     STAssertTrue((example2 != answer2), @"Strings should not be equal");

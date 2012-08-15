@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB0DE47415B8A99E007F382F /* NSManagedObject+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0DE47215B8A99E007F382F /* NSManagedObject+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB0DE47515B8A99E007F382F /* NSManagedObject+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0DE47315B8A99E007F382F /* NSManagedObject+CatKit.m */; };
 		DB2C3F701463398A0055493F /* UITouch+OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB2C3F711463398A0055493F /* UITouch+OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */; };
 		DB599861159FBDD300AB65C9 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -401,7 +399,6 @@
 				DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */,
 				DB5F9E2A147595DC00F0DCD3 /* CKCommonMacros.h in Headers */,
 				DBAAA63A15116125004C1532 /* NSFileManager+CatKit.h in Headers */,
-				DB0DE47415B8A99E007F382F /* NSManagedObject+CatKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +500,7 @@
 		DB785B8E141AFF89005477A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Andrew B. Smith";
 			};
 			buildConfigurationList = DB785B91141AFF89005477A8 /* Build configuration list for PBXProject "CatKit" */;
@@ -582,7 +579,6 @@
 			files = (
 				DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */,
 				DBAAA63B15116125004C1532 /* NSFileManager+CatKit.m in Sources */,
-				DB0DE47515B8A99E007F382F /* NSManagedObject+CatKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +700,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKit/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKit;
@@ -721,7 +717,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CatKit/CatKit-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = include/CatKit/Private;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include/CatKit;
@@ -742,7 +738,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/CatKit";
 				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -761,7 +757,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/CatKit";
 				INFOPLIST_FILE = "CatKitTests/CatKitTests-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -817,7 +813,7 @@
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;
@@ -836,7 +832,7 @@
 				GCC_PREFIX_HEADER = "CatKitUI/CatKitUI-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "CatKitUITests/CatKitUITests-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = octest;

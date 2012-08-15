@@ -10,9 +10,14 @@
 
 @interface NSFileManager (CatKit)
 
+- (NSString *)createDirectoryAtPath:(NSString *)path 
+        withIntermediateDirectories:(BOOL)createIntermediates;
+
 - (BOOL)createFileAtPath:(NSString *)path 
 withIntermediateDirectories:(BOOL)createIntermediates 
                 contents:(NSData *)contents 
               attributes:(NSDictionary *)attributes;
+
+- (void)deleteFilesInApplicationDocumentDirectory;
 
 @end

@@ -142,8 +142,8 @@
     }
 }
 
-- (void)deleteObjectinContext:(NSManagedObjectContext *)context
-                      andSave:(BOOL)save
+- (void)deleteInContext:(NSManagedObjectContext *)context
+                andSave:(BOOL)save
 {
     [context deleteObject:self];
     if (save) [self saveInContext:context];
@@ -152,7 +152,7 @@
 #pragma mark - Fetch
 
 + (NSArray *)executeFetchRequest:(NSFetchRequest *)request
-                inContext:(NSManagedObjectContext *)context
+                       inContext:(NSManagedObjectContext *)context
 {
     NSError *error = nil;
     NSArray *results = [context executeFetchRequest:request error:&error];
@@ -176,6 +176,22 @@
     NSUInteger count = [context countForFetchRequest:request error:&error];
     [self handleErrors:error];
     return count;
+}
+
++ (NSArray *)allValuesForProperty:(NSString *)propertyName 
+                      withRequest:(NSFetchRequest *)request
+                        inContext:(NSManagedObjectContext *)context
+{
+    [request setPropertiesToFetch:[NSArray arrayWithObject:propertyName]];
+    NSArray *results = [self executeFetchRequest:request
+                                                  inContext:context];
+    
+    NSMutableArray *propertyValuesList = [NSMutableArray arrayWithCapacity:results.count];
+    for (NSManagedObject *object in results) {
+        [propertyValuesList addObject:[object valueForKey:propertyName]];
+    }
+    
+    return propertyValuesList;
 }
 
 #pragma mark - 
@@ -207,7 +223,14 @@
     
     return [self executeFetchRequest:request 
                            inContext:context];
-    
+}
+
++ (void)deleteObjectAtURI:(NSURL *)objectURI 
+                inContext:(NSManagedObjectContext *)context 
+                  andSave:(BOOL)save
+{
+    NSManagedObject *object = [self objectForURI:objectURI inContext:context];
+    [object deleteInContext:context andSave:save];
 }
 
 - (BOOL)hasBeenDeleted 
