@@ -27,4 +27,9 @@ See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataReque
  */
 - (NSString *)lowercaseFirstLetterOnlyString;
 
+/**
+ Capitalize the first letter of the string
+ */
+- (NSString *)uppercaseFirstLetterOnlyString;
+
 @end

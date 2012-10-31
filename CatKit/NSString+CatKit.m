@@ -38,4 +38,9 @@
     return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];
 }
 
+- (NSString *)uppercaseFirstLetterOnlyString {
+    NSString *firstCharacterInString = [[self substringToIndex:1] uppercaseString];
+    return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];
+}
+
 @end

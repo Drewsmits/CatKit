@@ -53,24 +53,28 @@ withIntermediateDirectories:(BOOL)createIntermediates
                        attributes:attributes];
 }
 
+- (NSURL *)applicationDocumentDirectory
+{
+    NSURL *applicationDocDirectory = [[self URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    return applicationDocDirectory;
+}
+
 - (void)deleteFilesInApplicationDocumentDirectory 
 {
     // Ensure we are on the main thread
     NSAssert([[NSThread currentThread] isEqual:[NSThread mainThread]], @"Operations must occur on the main thread");
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    NSURL *applicationDocDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *applicationDocDirectory = [self applicationDocumentDirectory];
     
     NSError *error = nil;
-    NSArray *directoryContents = [fileManager contentsOfDirectoryAtURL:applicationDocDirectory
-                                            includingPropertiesForKeys:nil
-                                                               options:NSDirectoryEnumerationSkipsHiddenFiles
-                                                                 error:&error];
+    NSArray *directoryContents = [self contentsOfDirectoryAtURL:applicationDocDirectory
+                                     includingPropertiesForKeys:nil
+                                                        options:NSDirectoryEnumerationSkipsHiddenFiles
+                                                          error:&error];
     
     if (error == nil) {
         for (NSURL *URL in directoryContents) {
-            BOOL removeSuccess = [fileManager removeItemAtURL:URL error:&error];
+            BOOL removeSuccess = [self removeItemAtURL:URL error:&error];
             if (!removeSuccess) {
                 NSLog(@"%@", error);
             }
@@ -80,5 +84,10 @@ withIntermediateDirectories:(BOOL)createIntermediates
     }
 }
 
+- (NSURL *)newUniqueDocumentDirectory
+{
+    NSString *uniqueString = [[NSProcessInfo processInfo] globallyUniqueString];
+    return [self.applicationDocumentDirectory URLByAppendingPathComponent:uniqueString];
+}
 
 @end

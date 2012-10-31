@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB2C3F701463398A0055493F /* UITouch+OpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB2C3F711463398A0055493F /* UITouch+OpenGL.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */; };
+		DB41D9FB15E442C2001F3DD8 /* UIView+Nib.h in Headers */ = {isa = PBXBuildFile; fileRef = DB41D9F915E442C2001F3DD8 /* UIView+Nib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB41D9FC15E442C2001F3DD8 /* UIView+Nib.m in Sources */ = {isa = PBXBuildFile; fileRef = DB41D9FA15E442C2001F3DD8 /* UIView+Nib.m */; };
 		DB599861159FBDD300AB65C9 /* UIImage+Resize.h in Headers */ = {isa = PBXBuildFile; fileRef = DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB599862159FBDD300AB65C9 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = DB599860159FBDD200AB65C9 /* UIImage+Resize.m */; };
 		DB599866159FBE8A00AB65C9 /* UIImage+RoundedCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +79,8 @@
 		DB0DE47B15B8AE57007F382F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITouch+OpenGL.h"; path = "CatKitUI/UITouch+OpenGL.h"; sourceTree = SOURCE_ROOT; };
 		DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITouch+OpenGL.m"; path = "CatKitUI/UITouch+OpenGL.m"; sourceTree = SOURCE_ROOT; };
+		DB41D9F915E442C2001F3DD8 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Nib.h"; path = "CatKitUI/UIView+Nib.h"; sourceTree = SOURCE_ROOT; };
+		DB41D9FA15E442C2001F3DD8 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Nib.m"; path = "CatKitUI/UIView+Nib.m"; sourceTree = SOURCE_ROOT; };
 		DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		DB599860159FBDD200AB65C9 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 				DB785BCF141B0576005477A8 /* UIView+Position.m */,
 				DB785C01141B0E95005477A8 /* UIView+Insert.h */,
 				DB785C02141B0E95005477A8 /* UIView+Insert.m */,
+				DB41D9F915E442C2001F3DD8 /* UIView+Nib.h */,
+				DB41D9FA15E442C2001F3DD8 /* UIView+Nib.m */,
 			);
 			name = UIView;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				DB599866159FBE8A00AB65C9 /* UIImage+RoundedCorner.h in Headers */,
 				DB59986A159FBEB800AB65C9 /* UIImage+Alpha.h in Headers */,
 				DBB112D8159FD3D5002218F9 /* UIImage+Orientation.h in Headers */,
+				DB41D9FB15E442C2001F3DD8 /* UIView+Nib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +610,7 @@
 				DB599867159FBE8A00AB65C9 /* UIImage+RoundedCorner.m in Sources */,
 				DB59986B159FBEB800AB65C9 /* UIImage+Alpha.m in Sources */,
 				DBB112D9159FD3D5002218F9 /* UIImage+Orientation.m in Sources */,
+				DB41D9FC15E442C2001F3DD8 /* UIView+Nib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

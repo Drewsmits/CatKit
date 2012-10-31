@@ -22,4 +22,14 @@ static inline BOOL IsEmpty(id thing) {
         && [(NSArray *)thing count] == 0);
 }
 
+#define DEFINE_SHARED_INSTANCE_USING_BLOCK(block) \
+static dispatch_once_t pred = 0; \
+__strong static id _sharedObject = nil; \
+dispatch_once(&pred, ^{ \
+_sharedObject = block(); \
+}); \
+return _sharedObject; \
+
 #endif
+
+#define DegreesToRadians(x) (M_PI * x / 180.0)

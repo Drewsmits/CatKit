@@ -18,6 +18,9 @@ withIntermediateDirectories:(BOOL)createIntermediates
                 contents:(NSData *)contents 
               attributes:(NSDictionary *)attributes;
 
+- (NSURL *)applicationDocumentDirectory;
 - (void)deleteFilesInApplicationDocumentDirectory;
+
+- (NSURL *)newUniqueDocumentDirectory;
 
 @end
