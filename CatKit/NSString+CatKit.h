@@ -23,6 +23,12 @@ See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataReque
 - (BOOL)isEmailAddress;
 
 /**
+ Validates string as a bank account routing number. Routing number spec is defined on the wiki below.
+ http://en.wikipedia.org/wiki/Routing_transit_number#Check_digit
+ */
+- (BOOL)isBankRoutingTransitNumber;
+
+/**
  Lowercase the first letter of the string
  */
 - (NSString *)lowercaseFirstLetterOnlyString;

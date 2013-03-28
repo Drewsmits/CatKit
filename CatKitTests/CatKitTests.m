@@ -41,6 +41,37 @@
     STAssertTrue([example5 isEmailAddress], @"String should be an email");
 }
 
+- (void)testIsStringRoutingTransitNumber
+{
+    //
+    // Routing numbers from http://www.routingnumbers.org
+    //
+    NSString *bOfa1  = @"081211135";
+    NSString *bOfa2  = @"114000019";
+    NSString *chase1 = @"031100393";
+    NSString *chase2 = @"028000011";
+    
+    //
+    // Routing numbers from my brain
+    //
+    NSString *fail1 = @"1";
+    NSString *fail2 = @"123456789";
+    NSString *fail3 = @"23985723985";
+    NSString *fail4 = @"asdlkf";
+    NSString *fail5 = @"";
+    
+    STAssertTrue([bOfa1 isBankRoutingTransitNumber], @"Real routing number should pass");
+    STAssertTrue([bOfa2 isBankRoutingTransitNumber], @"Real routing number should pass");
+    STAssertTrue([chase1 isBankRoutingTransitNumber], @"Real routing number should pass");
+    STAssertTrue([chase2 isBankRoutingTransitNumber], @"Real routing number should pass");
+    
+    STAssertFalse([fail1 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    STAssertFalse([fail2 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    STAssertFalse([fail3 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    STAssertFalse([fail4 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    STAssertFalse([fail5 isBankRoutingTransitNumber], @"Fake routing number should fail");
+}
+
 - (void)testLowercaseFirstLetterOnlyString {
     
     NSString *example1 = @"SomethingWeird";

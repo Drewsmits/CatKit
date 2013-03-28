@@ -14,4 +14,6 @@
 
 - (void)sizeToFitMaxSize:(CGSize)maxSize;
 
+- (void)adjustFontSizeToFit;
+
 @end

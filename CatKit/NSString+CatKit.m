@@ -33,6 +33,25 @@
     return [emailTest evaluateWithObject:self];
 }
 
+- (BOOL)isBankRoutingTransitNumber
+{
+    if (self.length != 9) return NO;
+    
+    NSUInteger d1 = [[self substringWithRange:NSMakeRange(0, 1)] integerValue];
+    NSUInteger d2 = [[self substringWithRange:NSMakeRange(1, 1)] integerValue];
+    NSUInteger d3 = [[self substringWithRange:NSMakeRange(2, 1)] integerValue];
+    NSUInteger d4 = [[self substringWithRange:NSMakeRange(3, 1)] integerValue];
+    NSUInteger d5 = [[self substringWithRange:NSMakeRange(4, 1)] integerValue];
+    NSUInteger d6 = [[self substringWithRange:NSMakeRange(5, 1)] integerValue];
+    NSUInteger d7 = [[self substringWithRange:NSMakeRange(6, 1)] integerValue];
+    NSUInteger d8 = [[self substringWithRange:NSMakeRange(7, 1)] integerValue];
+    NSUInteger d9 = [[self substringWithRange:NSMakeRange(8, 1)] integerValue];
+
+    NSUInteger checksum = (3 * (d1 + d4 + d7) + 7 * (d2 + d5 + d8) + (d3 + d6 + d9)) % 10;
+    
+    return (checksum == 0);
+}
+
 - (NSString *)lowercaseFirstLetterOnlyString {
     NSString *firstCharacterInString = [[self substringToIndex:1] lowercaseString];
     return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];

@@ -25,4 +25,13 @@ void RandomlyColorSubviewsOfView(UIView *view) {
     }
 }
 
+UIColor * RandomColor()
+{
+    CGFloat r = (arc4random() % 255) / 255.0;
+    CGFloat g = (arc4random() % 255) / 255.0;
+    CGFloat b = (arc4random() % 255) / 255.0;
+    
+    return [UIColor colorWithRed:r green:g blue:b alpha:0.5];
+}
+
 #endif

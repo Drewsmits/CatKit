@@ -12,6 +12,7 @@
 
 + (UIView *)newViewFromNibInBundle:(NSBundle *)bundle
 {
+    if (!bundle) bundle = [NSBundle mainBundle];
     NSArray *views = [bundle loadNibNamed:[self description]
                                     owner:nil
                                   options:nil];

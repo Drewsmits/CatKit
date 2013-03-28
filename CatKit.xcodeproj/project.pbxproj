@@ -42,6 +42,8 @@
 		DB785C03141B0E95005477A8 /* UIView+Insert.h in Headers */ = {isa = PBXBuildFile; fileRef = DB785C01141B0E95005477A8 /* UIView+Insert.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB785C04141B0E95005477A8 /* UIView+Insert.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C02141B0E95005477A8 /* UIView+Insert.m */; };
 		DB785C08141B13EE005477A8 /* UIViewPositionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB785C07141B13EE005477A8 /* UIViewPositionTests.m */; };
+		DB82F3D31641E2B500FDA5BE /* UILabel+Align.h in Headers */ = {isa = PBXBuildFile; fileRef = DB82F3D11641E2B500FDA5BE /* UILabel+Align.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB82F3D41641E2B500FDA5BE /* UILabel+Align.m in Sources */ = {isa = PBXBuildFile; fileRef = DB82F3D21641E2B500FDA5BE /* UILabel+Align.m */; };
 		DB83D101144F9B2400D94890 /* NSString+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB83D102144F9B2400D94890 /* NSString+CatKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB83D100144F9B2400D94890 /* NSString+CatKit.m */; };
 		DBAAA63A15116125004C1532 /* NSFileManager+CatKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -114,6 +116,8 @@
 		DB785C02141B0E95005477A8 /* UIView+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Insert.m"; path = "../CatKitUI/UIView+Insert.m"; sourceTree = "<group>"; };
 		DB785C06141B13EE005477A8 /* UIViewPositionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewPositionTests.h; sourceTree = "<group>"; };
 		DB785C07141B13EE005477A8 /* UIViewPositionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewPositionTests.m; sourceTree = "<group>"; };
+		DB82F3D11641E2B500FDA5BE /* UILabel+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Align.h"; sourceTree = "<group>"; };
+		DB82F3D21641E2B500FDA5BE /* UILabel+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Align.m"; sourceTree = "<group>"; };
 		DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CatKit.h"; sourceTree = "<group>"; };
 		DB83D100144F9B2400D94890 /* NSString+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CatKit.m"; sourceTree = "<group>"; };
 		DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CatKit.h"; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 			children = (
 				DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */,
 				DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */,
+				DB82F3D11641E2B500FDA5BE /* UILabel+Align.h */,
+				DB82F3D21641E2B500FDA5BE /* UILabel+Align.m */,
 			);
 			name = UILabel;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				DB59986A159FBEB800AB65C9 /* UIImage+Alpha.h in Headers */,
 				DBB112D8159FD3D5002218F9 /* UIImage+Orientation.h in Headers */,
 				DB41D9FB15E442C2001F3DD8 /* UIView+Nib.h in Headers */,
+				DB82F3D31641E2B500FDA5BE /* UILabel+Align.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +618,7 @@
 				DB59986B159FBEB800AB65C9 /* UIImage+Alpha.m in Sources */,
 				DBB112D9159FD3D5002218F9 /* UIImage+Orientation.m in Sources */,
 				DB41D9FC15E442C2001F3DD8 /* UIView+Nib.m in Sources */,
+				DB82F3D41641E2B500FDA5BE /* UILabel+Align.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
