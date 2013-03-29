@@ -10,21 +10,19 @@
 
 @implementation NSString (CatKit)
 
-- (NSString*)urlEncodedString { 
+- (NSString *)urlEncodedString
+{
 	return [self urlEncodedStringWithEncoding:NSUTF8StringEncoding];
 }
 
-// See http://github.com/pokeb/asi-http-request/raw/master/Classes/ASIFormDataRequest.m
-- (NSString *)urlEncodedStringWithEncoding:(NSStringEncoding)encoding { 
-	NSString *urlEncodedString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`", CFStringConvertNSStringEncodingToEncoding(encoding));
-	
+- (NSString *)urlEncodedStringWithEncoding:(NSStringEncoding)encoding
+{
+	NSString *urlEncodedString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`", CFStringConvertNSStringEncodingToEncoding(encoding));	
     return urlEncodedString ? urlEncodedString : @"";
 }
 
 - (BOOL)isEmailAddress
 {
-    // http://blog.logichigh.com/2010/09/02/validating-an-e-mail-address/
-    
     BOOL strict = YES;
     NSString *stricterFilterString = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSString *laxString            = @".+@.+\\.[A-Za-z]{2}[A-Za-z]*";
@@ -52,12 +50,14 @@
     return (checksum == 0);
 }
 
-- (NSString *)lowercaseFirstLetterOnlyString {
+- (NSString *)lowercaseFirstLetterOnlyString
+{
     NSString *firstCharacterInString = [[self substringToIndex:1] lowercaseString];
     return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];
 }
 
-- (NSString *)uppercaseFirstLetterOnlyString {
+- (NSString *)uppercaseFirstLetterOnlyString
+{
     NSString *firstCharacterInString = [[self substringToIndex:1] uppercaseString];
     return [self stringByReplacingCharactersInRange:NSMakeRange(0,1) withString:firstCharacterInString];
 }
