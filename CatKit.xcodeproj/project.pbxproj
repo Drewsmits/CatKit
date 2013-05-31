@@ -83,14 +83,14 @@
 		DB2C3F6F1463398A0055493F /* UITouch+OpenGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITouch+OpenGL.m"; path = "CatKitUI/UITouch+OpenGL.m"; sourceTree = SOURCE_ROOT; };
 		DB41D9F915E442C2001F3DD8 /* UIView+Nib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Nib.h"; path = "CatKitUI/UIView+Nib.h"; sourceTree = SOURCE_ROOT; };
 		DB41D9FA15E442C2001F3DD8 /* UIView+Nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Nib.m"; path = "CatKitUI/UIView+Nib.m"; sourceTree = SOURCE_ROOT; };
-		DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		DB599860159FBDD200AB65C9 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
-		DB599865159FBE8A00AB65C9 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		DB599868159FBEB800AB65C9 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
-		DB599869159FBEB800AB65C9 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		DB59985F159FBDD200AB65C9 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "../CatKitUI/UIImage+Resize.h"; sourceTree = "<group>"; };
+		DB599860159FBDD200AB65C9 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "../CatKitUI/UIImage+Resize.m"; sourceTree = "<group>"; };
+		DB599864159FBE8A00AB65C9 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+RoundedCorner.h"; path = "../CatKitUI/UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		DB599865159FBE8A00AB65C9 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RoundedCorner.m"; path = "../CatKitUI/UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		DB599868159FBEB800AB65C9 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Alpha.h"; path = "../CatKitUI/UIImage+Alpha.h"; sourceTree = "<group>"; };
+		DB599869159FBEB800AB65C9 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Alpha.m"; path = "../CatKitUI/UIImage+Alpha.m"; sourceTree = "<group>"; };
 		DB5F9E29147595DC00F0DCD3 /* CKCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKCommonMacros.h; sourceTree = "<group>"; };
-		DB72CFF61459FD2900231360 /* CatKitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatKitUI.h; path = ../CatKit/CatKitUI.h; sourceTree = "<group>"; };
+		DB72CFF61459FD2900231360 /* CatKitUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatKitUI.h; sourceTree = "<group>"; };
 		DB73EB15141B4960000D904E /* UIViewInsertTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewInsertTests.h; sourceTree = "<group>"; };
 		DB73EB16141B4960000D904E /* UIViewInsertTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewInsertTests.m; sourceTree = "<group>"; };
 		DB785B97141AFF8A005477A8 /* libCatKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCatKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,20 +116,20 @@
 		DB785C02141B0E95005477A8 /* UIView+Insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Insert.m"; path = "../CatKitUI/UIView+Insert.m"; sourceTree = "<group>"; };
 		DB785C06141B13EE005477A8 /* UIViewPositionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewPositionTests.h; sourceTree = "<group>"; };
 		DB785C07141B13EE005477A8 /* UIViewPositionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewPositionTests.m; sourceTree = "<group>"; };
-		DB82F3D11641E2B500FDA5BE /* UILabel+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Align.h"; sourceTree = "<group>"; };
-		DB82F3D21641E2B500FDA5BE /* UILabel+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Align.m"; sourceTree = "<group>"; };
+		DB82F3D11641E2B500FDA5BE /* UILabel+Align.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Align.h"; path = "../CatKitUI/UILabel+Align.h"; sourceTree = "<group>"; };
+		DB82F3D21641E2B500FDA5BE /* UILabel+Align.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Align.m"; path = "../CatKitUI/UILabel+Align.m"; sourceTree = "<group>"; };
 		DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CatKit.h"; sourceTree = "<group>"; };
 		DB83D100144F9B2400D94890 /* NSString+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CatKit.m"; sourceTree = "<group>"; };
 		DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CatKit.h"; sourceTree = "<group>"; };
 		DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CatKit.m"; sourceTree = "<group>"; };
-		DBB112D6159FD3D4002218F9 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
-		DBB112D7159FD3D4002218F9 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
+		DBB112D6159FD3D4002218F9 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Orientation.h"; path = "../CatKitUI/UIImage+Orientation.h"; sourceTree = "<group>"; };
+		DBB112D7159FD3D4002218F9 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Orientation.m"; path = "../CatKitUI/UIImage+Orientation.m"; sourceTree = "<group>"; };
 		DBB6B4EB14BE4B0F0043F5D1 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "CatKitUI/UILabel+Size.h"; sourceTree = SOURCE_ROOT; };
 		DBB6B4EC14BE4B0F0043F5D1 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "CatKitUI/UILabel+Size.m"; sourceTree = SOURCE_ROOT; };
 		DBB6B4F014BE4CA30043F5D1 /* UILabelSizeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelSizeTests.h; sourceTree = "<group>"; };
 		DBB6B4F114BE4CA30043F5D1 /* UILabelSizeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelSizeTests.m; sourceTree = "<group>"; };
-		DBD3B5BD152E371100CED2E3 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
-		DBD3B5BE152E371100CED2E3 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		DBD3B5BD152E371100CED2E3 /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Crop.h"; path = "../CatKitUI/UIImage+Crop.h"; sourceTree = "<group>"; };
+		DBD3B5BE152E371100CED2E3 /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Crop.m"; path = "../CatKitUI/UIImage+Crop.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
