@@ -20,7 +20,6 @@
 
 - (void)tearDown {
     // Tear-down code here.
-    [view release];
     
     [super tearDown];
 }

@@ -6,13 +6,16 @@
 //  Copyright (c) 2012 Andrew B. Smith. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
 #import "UILabelSizeTests.h"
 #import "UIView+Position.h"
 #import "UILabel+Size.h"
 
 @implementation UILabelSizeTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
     
     NSString *text = @"Raw denim high life incididunt DIY. Sapiente sustainable exercitation, dreamcatcher dolor viral anim vero keffiyeh elit consequat american apparel minim. Sint ad viral 3 wolf moon, in veniam bicycle rights odio sartorial. Qui DIY synth before they sold out art party, wolf lo-fi 3 wolf moon veniam wes anderson eu. American apparel tumblr scenester, jean shorts in mlkshk ad sustainable mustache +1 cupidatat cliche aliqua. Aliquip photo booth shoreditch wolf american apparel, PBR 3 wolf moon mollit cred veniam gentrify leggings single-origin coffee terry richardson irony. Incididunt laborum magna, keffiyeh lo-fi tempor dreamcatcher single-origin coffee letterpress assumenda chambray.";
@@ -23,10 +26,9 @@
     label.text = text;
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     // Tear-down code here.
-    [label release];
-    
     [super tearDown];
 }
 

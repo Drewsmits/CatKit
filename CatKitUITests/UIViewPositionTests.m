@@ -37,7 +37,6 @@ static CGFloat kViewAltHeight = 103;
 
 - (void)tearDown {
     // Tear-down code here.
-    [view release];
     
     [super tearDown];
 }
