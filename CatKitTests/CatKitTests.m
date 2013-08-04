@@ -10,6 +10,7 @@
 #import "NSString+CatKit.h"
 #import "NSFileManager+CatKit.h"
 #import "CKCommonMacros.h"
+#import "NSArray+CatKit.h"
 
 
 @implementation CatKitTests
@@ -146,6 +147,44 @@
     [fileManager removeItemAtPath:tempDir error:nil];
     
     STAssertFalse(fileCreated, @"Should save file");
+}
+
+#pragma mark - NSArray
+
+- (void)testSplitAtIndex
+{
+    NSArray *array = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G"];
+    
+    NSArray *result = [array splitAtIndex:0];
+    NSArray *first = result[0];
+    NSArray *second = result[1];
+    
+    STAssertEquals(first.count, 0U, @"Array split at index 0 should have an empty first array");
+    STAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
+ 
+    result = [array splitAtIndex:-1];
+    first = result[0];
+    second = result[1];
+    
+    STAssertEquals(first.count, 0U, @"Array split at index 0 should have an empty first array");
+    STAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
+    
+    result = [array splitAtIndex:8];
+    first = result[0];
+    second = result[1];
+    
+    STAssertEqualObjects(first, array, @"Array split at index 0 should have return the same first array");
+    STAssertEquals(second.count, 0U, @"Array split at index 0 should have an empty second array");
+    
+    result = [array splitAtIndex:3];
+    first = result[0];
+    second = result[1];
+    
+    NSArray *shouldBeFirst  = @[@"A", @"B", @"C"];
+    NSArray *shouldBeSecond = @[@"D", @"E", @"F", @"G"];
+    
+    STAssertEqualObjects(first, shouldBeFirst, @"Array split should have correct parts");
+    STAssertEqualObjects(second, shouldBeSecond, @"Array split should have correct parts");
 }
 
 @end
