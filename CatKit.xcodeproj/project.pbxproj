@@ -78,8 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB0DE47215B8A99E007F382F /* NSManagedObject+CatKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+CatKit.h"; sourceTree = "<group>"; };
-		DB0DE47315B8A99E007F382F /* NSManagedObject+CatKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CatKit.m"; sourceTree = "<group>"; };
 		DB0DE47A15B8AE57007F382F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		DB0DE47B15B8AE57007F382F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		DB2C3F6E1463398A0055493F /* UITouch+OpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITouch+OpenGL.h"; path = "CatKitUI/UITouch+OpenGL.h"; sourceTree = SOURCE_ROOT; };
@@ -366,8 +364,6 @@
 				DB0DE47B15B8AE57007F382F /* NSData+Base64.m */,
 				DBAAA63815116125004C1532 /* NSFileManager+CatKit.h */,
 				DBAAA63915116125004C1532 /* NSFileManager+CatKit.m */,
-				DB0DE47215B8A99E007F382F /* NSManagedObject+CatKit.h */,
-				DB0DE47315B8A99E007F382F /* NSManagedObject+CatKit.m */,
 				DB83D0FF144F9B2400D94890 /* NSString+CatKit.h */,
 				DB83D100144F9B2400D94890 /* NSString+CatKit.m */,
 			);
