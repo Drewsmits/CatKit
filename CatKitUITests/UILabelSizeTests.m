@@ -40,7 +40,7 @@
     
     BOOL lessThan = (label.width <= 50);
     
-    STAssertTrue(lessThan, @"UILabel should not be wider than max width");
+    XCTAssertTrue(lessThan, @"UILabel should not be wider than max width");
 }
 
 - (void)testSizeToFitMaxWidthManyLines {
@@ -53,7 +53,7 @@
     
     BOOL lessThan = (label.width <= maxWidth);
     
-    STAssertTrue(lessThan, @"UILabel should not be wider than max width");
+    XCTAssertTrue(lessThan, @"UILabel should not be wider than max width");
 }
 
 - (void)testSizeToFitMaxSize {
@@ -66,8 +66,8 @@
     BOOL widthLessThan = (label.width <= maxSize.width);
     BOOL heightLessThan = (label.height <= maxSize.height);
     
-    STAssertTrue(widthLessThan, @"UILabel should not be wider than max width");
-    STAssertTrue(heightLessThan, @"UILabel should not be taller than max height");
+    XCTAssertTrue(widthLessThan, @"UILabel should not be wider than max width");
+    XCTAssertTrue(heightLessThan, @"UILabel should not be taller than max height");
 }
 
 @end

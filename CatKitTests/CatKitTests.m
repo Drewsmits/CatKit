@@ -35,11 +35,11 @@
     NSString *example4 = @"this.should.pass@something.ly";
     NSString *example5 = @"shouldSupportUpperCase@gmail.com";
 
-    STAssertTrue([example1 isEmailAddress], @"String should be an email");
-    STAssertFalse([example2 isEmailAddress], @"String should not be an email");
-    STAssertFalse([example3 isEmailAddress], @"String should not be an email");
-    STAssertTrue([example4 isEmailAddress], @"String should be an email");
-    STAssertTrue([example5 isEmailAddress], @"String should be an email");
+    XCTAssertTrue([example1 isEmailAddress], @"String should be an email");
+    XCTAssertFalse([example2 isEmailAddress], @"String should not be an email");
+    XCTAssertFalse([example3 isEmailAddress], @"String should not be an email");
+    XCTAssertTrue([example4 isEmailAddress], @"String should be an email");
+    XCTAssertTrue([example5 isEmailAddress], @"String should be an email");
 }
 
 - (void)testIsStringRoutingTransitNumber
@@ -61,16 +61,16 @@
     NSString *fail4 = @"asdlkf";
     NSString *fail5 = @"";
     
-    STAssertTrue([bOfa1 isBankRoutingTransitNumber], @"Real routing number should pass");
-    STAssertTrue([bOfa2 isBankRoutingTransitNumber], @"Real routing number should pass");
-    STAssertTrue([chase1 isBankRoutingTransitNumber], @"Real routing number should pass");
-    STAssertTrue([chase2 isBankRoutingTransitNumber], @"Real routing number should pass");
+    XCTAssertTrue([bOfa1 isBankRoutingTransitNumber], @"Real routing number should pass");
+    XCTAssertTrue([bOfa2 isBankRoutingTransitNumber], @"Real routing number should pass");
+    XCTAssertTrue([chase1 isBankRoutingTransitNumber], @"Real routing number should pass");
+    XCTAssertTrue([chase2 isBankRoutingTransitNumber], @"Real routing number should pass");
     
-    STAssertFalse([fail1 isBankRoutingTransitNumber], @"Fake routing number should fail");
-    STAssertFalse([fail2 isBankRoutingTransitNumber], @"Fake routing number should fail");
-    STAssertFalse([fail3 isBankRoutingTransitNumber], @"Fake routing number should fail");
-    STAssertFalse([fail4 isBankRoutingTransitNumber], @"Fake routing number should fail");
-    STAssertFalse([fail5 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    XCTAssertFalse([fail1 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    XCTAssertFalse([fail2 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    XCTAssertFalse([fail3 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    XCTAssertFalse([fail4 isBankRoutingTransitNumber], @"Fake routing number should fail");
+    XCTAssertFalse([fail5 isBankRoutingTransitNumber], @"Fake routing number should fail");
 }
 
 - (void)testLowercaseFirstLetterOnlyString {
@@ -81,11 +81,11 @@
     NSString *example2 = @"OMGLOLBBQ";
     NSString *answer2 = @"oMGLOLBBQ";
     
-    STAssertTrue((example1 != answer1), @"Strings should not be equal");
-    STAssertTrue((example2 != answer2), @"Strings should not be equal");
+    XCTAssertTrue((example1 != answer1), @"Strings should not be equal");
+    XCTAssertTrue((example2 != answer2), @"Strings should not be equal");
 
-    STAssertEqualObjects([example1 lowercaseFirstLetterOnlyString], answer1, @"String should have lowercase first letter");
-    STAssertEqualObjects([example2 lowercaseFirstLetterOnlyString], answer2, @"String should have lowercase first letter");
+    XCTAssertEqualObjects([example1 lowercaseFirstLetterOnlyString], answer1, @"String should have lowercase first letter");
+    XCTAssertEqualObjects([example2 lowercaseFirstLetterOnlyString], answer2, @"String should have lowercase first letter");
 
 }
 
@@ -100,19 +100,21 @@
     NSArray *emptyArray = [NSArray array];
     NSArray *notEmptyArray = [NSArray arrayWithObject:@"object"];
     
-    STAssertFalse(IsEmpty(notEmpty), @"Should not be empty");
-    STAssertTrue(IsEmpty(empty), @"Should be empty");
-    STAssertTrue(IsEmpty(nilString), @"Should be empty");
-    STAssertTrue(IsEmpty(emptyArray), @"Should be empty");
-    STAssertFalse(IsEmpty(notEmptyArray), @"Should not be empty");
+    XCTAssertFalse(IsEmpty(notEmpty), @"Should not be empty");
+    XCTAssertTrue(IsEmpty(empty), @"Should be empty");
+    XCTAssertTrue(IsEmpty(nilString), @"Should be empty");
+    XCTAssertTrue(IsEmpty(emptyArray), @"Should be empty");
+    XCTAssertFalse(IsEmpty(notEmptyArray), @"Should not be empty");
 }
 
 #pragma mark - NSFileManager
 
-- (void)testNSFileManagerSaveFileAndCreateSubDirs {
+- (void)testNSFileManagerSaveFileAndCreateSubDirs
+{    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
     
-    NSString *homeDir = NSHomeDirectory();
-    NSString *tempDir = [homeDir stringByAppendingString:@"/temp"];
+    NSString *tempDir = [documentsDirectory stringByAppendingString:@"/temp"];
     
     NSString *filePath = [tempDir stringByAppendingString:@"/folder1/folder2/temp.txt"];
     
@@ -126,7 +128,7 @@
     // cleanup temp dir
     [fileManager removeItemAtPath:tempDir error:nil];
     
-    STAssertTrue(fileCreated, @"Should save file");
+    XCTAssertTrue(fileCreated, @"Should save file");
 }
 
 - (void)testNSFileManagerSaveFileDontCreateSubDirs {
@@ -146,7 +148,7 @@
     // cleanup temp dir
     [fileManager removeItemAtPath:tempDir error:nil];
     
-    STAssertFalse(fileCreated, @"Should save file");
+    XCTAssertFalse(fileCreated, @"Should save file");
 }
 
 #pragma mark - NSArray
@@ -159,22 +161,22 @@
     NSArray *first = result[0];
     NSArray *second = result[1];
     
-    STAssertEquals(first.count, 0U, @"Array split at index 0 should have an empty first array");
-    STAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
+    XCTAssertEqual(first.count, 0U, @"Array split at index 0 should have an empty first array");
+    XCTAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
  
     result = [array splitAtIndex:-1];
     first = result[0];
     second = result[1];
     
-    STAssertEquals(first.count, 0U, @"Array split at index 0 should have an empty first array");
-    STAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
+    XCTAssertEqual(first.count, 0U, @"Array split at index 0 should have an empty first array");
+    XCTAssertEqualObjects(second, array, @"Array split at index 0 should have return the same second array");
     
     result = [array splitAtIndex:8];
     first = result[0];
     second = result[1];
     
-    STAssertEqualObjects(first, array, @"Array split at index 0 should have return the same first array");
-    STAssertEquals(second.count, 0U, @"Array split at index 0 should have an empty second array");
+    XCTAssertEqualObjects(first, array, @"Array split at index 0 should have return the same first array");
+    XCTAssertEqual(second.count, 0U, @"Array split at index 0 should have an empty second array");
     
     result = [array splitAtIndex:3];
     first = result[0];
@@ -183,8 +185,8 @@
     NSArray *shouldBeFirst  = @[@"A", @"B", @"C"];
     NSArray *shouldBeSecond = @[@"D", @"E", @"F", @"G"];
     
-    STAssertEqualObjects(first, shouldBeFirst, @"Array split should have correct parts");
-    STAssertEqualObjects(second, shouldBeSecond, @"Array split should have correct parts");
+    XCTAssertEqualObjects(first, shouldBeFirst, @"Array split should have correct parts");
+    XCTAssertEqualObjects(second, shouldBeSecond, @"Array split should have correct parts");
 }
 
 @end

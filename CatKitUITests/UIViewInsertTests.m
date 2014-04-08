@@ -37,7 +37,7 @@
     
     BOOL pass = ([container.subviews indexOfObject:view] == 0);
      
-     STAssertTrue(pass, @"insertSubviewAtBack should put subview last");
+     XCTAssertTrue(pass, @"insertSubviewAtBack should put subview last");
     
 }
 

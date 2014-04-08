@@ -41,11 +41,15 @@ withIntermediateDirectories:(BOOL)createIntermediates
     NSString *pathDir = [NSString pathWithComponents:pathComponents];
     
     BOOL isDir;
-    if (![self fileExistsAtPath:pathDir isDirectory:&isDir] && isDir) {
-        [self createDirectoryAtPath:pathDir 
+    if (![self fileExistsAtPath:pathDir isDirectory:&isDir]) {
+        NSError *error = nil;
+        [self createDirectoryAtPath:pathDir
         withIntermediateDirectories:createIntermediates
                          attributes:nil
-                              error:NULL];
+                              error:&error];
+        if (error) {
+            NSLog(@"%@", error);
+        }
     }
     
     return [self createFileAtPath:path 

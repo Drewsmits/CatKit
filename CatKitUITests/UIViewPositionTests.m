@@ -46,42 +46,42 @@ static CGFloat kViewAltHeight = 103;
 
 - (void)testLeft {
     view.left = kViewLeft;
-    STAssertEquals(view.frame.origin.x, 
+    XCTAssertEqual(view.frame.origin.x, 
                    kViewLeft, 
                    @"View left should be set correctly");
 }
 
 - (void)testRight {
     view.right = kViewRight;
-    STAssertEquals(view.frame.origin.x + view.frame.size.width, 
+    XCTAssertEqual(view.frame.origin.x + view.frame.size.width, 
                    kViewRight, 
                    @"View right should be set correctly");
 }
 
 - (void)testTop {
     view.top = kViewTop;
-    STAssertEquals(view.frame.origin.y, 
+    XCTAssertEqual(view.frame.origin.y, 
                    kViewTop, 
                    @"View top should be set correctly");
 }
 
 - (void)testBottom {
     view.bottom = kViewBottom;
-    STAssertEquals(view.frame.origin.y + view.frame.size.height, 
+    XCTAssertEqual(view.frame.origin.y + view.frame.size.height, 
                    kViewBottom, 
                    @"View bottom should be set correctly");
 }
 
 - (void)testCenterX {
     view.centerX = kViewCenterX;
-    STAssertEquals(view.center.x, 
+    XCTAssertEqual(view.center.x, 
                    kViewCenterX, 
                    @"View center x should be set correctly");
 }
 
 - (void)testCenterY {
     view.centerY = kViewCenterY;
-    STAssertEquals(view.center.y, 
+    XCTAssertEqual(view.center.y, 
                    kViewCenterY, 
                    @"View center y should be set correctly");
 }
@@ -91,14 +91,14 @@ static CGFloat kViewAltHeight = 103;
 
 - (void)testWidth {
     view.width = kViewAltWidth;
-    STAssertEquals(view.frame.size.width, 
+    XCTAssertEqual(view.frame.size.width, 
                    kViewAltWidth, 
                    @"View width should be set correctly");
 }
 
 - (void)testHeight {
     view.height = kViewAltHeight;
-    STAssertEquals(view.frame.size.height, 
+    XCTAssertEqual(view.frame.size.height, 
                    kViewAltHeight, 
                    @"View height should be set correctly");
 }
@@ -111,7 +111,7 @@ static CGFloat kViewAltHeight = 103;
     CGFloat leftish = kViewLeft + 0.2;
     view.leftAligned = leftish;
     
-    STAssertEquals(view.frame.origin.x, 
+    XCTAssertEqual(view.frame.origin.x, 
                    kViewLeft, 
                    @"View left aligned should be set correctly");
 }
@@ -121,7 +121,7 @@ static CGFloat kViewAltHeight = 103;
     CGFloat rightish = kViewRight + 0.4;
     view.rightAligned = rightish;
     
-    STAssertEquals(view.frame.origin.x + view.frame.size.width, 
+    XCTAssertEqual(view.frame.origin.x + view.frame.size.width, 
                    kViewRight, 
                    @"View right aligned should be set correctly");
 }
@@ -131,7 +131,7 @@ static CGFloat kViewAltHeight = 103;
     CGFloat topish = kViewTop + 0.1;
     view.topAligned = topish;
     
-    STAssertEquals(view.frame.origin.y, 
+    XCTAssertEqual(view.frame.origin.y, 
                    kViewTop, 
                    @"View top aligned should be set correctly");
 }
@@ -141,7 +141,7 @@ static CGFloat kViewAltHeight = 103;
     CGFloat bottomish = kViewBottom + 0.4;
     view.bottomAligned = bottomish;
     
-    STAssertEquals(view.frame.origin.y + view.frame.size.height, 
+    XCTAssertEqual(view.frame.origin.y + view.frame.size.height, 
                    kViewBottom, 
                    @"View bottom aligned should be set correctly");
 }
@@ -154,7 +154,7 @@ static CGFloat kViewAltHeight = 103;
     double remainder = fabs(fmod(view.leftAligned, view.left));    
     double zero = 0.0;
     
-    STAssertEquals(remainder, 
+    XCTAssertEqual(remainder, 
                    zero, 
                    @"View center x aligned should be set correctly");
 }
@@ -167,7 +167,7 @@ static CGFloat kViewAltHeight = 103;
     double remainder = fabs(fmod(view.topAligned, view.top));    
     double zero = 0.0;
     
-    STAssertEquals(remainder, 
+    XCTAssertEqual(remainder, 
                    zero, 
                    @"View center Y aligned should be set correctly");
 }
@@ -182,13 +182,13 @@ static CGFloat kViewAltHeight = 103;
     double remainderX = fabs(fmod(view.leftAligned, view.left));    
     double zero = 0.0;
     
-    STAssertEquals(remainderX, 
+    XCTAssertEqual(remainderX, 
                    zero, 
                    @"View center x aligned should be set correctly");
     
     double remainderY = fabs(fmod(view.topAligned, view.top));    
     
-    STAssertEquals(remainderY, 
+    XCTAssertEqual(remainderY, 
                    zero, 
                    @"View center Y aligned should be set correctly");
 
